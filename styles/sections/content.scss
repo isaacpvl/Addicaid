@@ -88,14 +88,8 @@
 			.multiphone {
 				width: 97.5%;
 			}
-			.phone {
-				img {
-					@include border(1px, $dark-l);
-				}
-			}
 			.shot {
 				position: relative;
-				@include border(1px, $dark-l);
 				img {
 					width: 100%;
 				}

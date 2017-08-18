@@ -1703,18 +1703,28 @@ header h1.line.secondary::before, header h1 .line.secondary::before, header h2.l
   transition-delay: 0s; }
   .phone .screen {
     position: relative;
-    border-radius: 1px;
     background: #666; }
-  .phone img {
-    width: 100%;
-    height: auto;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: none; }
+    .phone .screen img {
+      width: 100%;
+      height: auto;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      pointer-events: none;
+      border-radius: 2px; }
+    .phone .screen::after {
+      content: '';
+      position: absolute;
+      top: 1px;
+      bottom: 1px;
+      left: 1px;
+      right: 1px;
+      border-radius: 2px;
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.9);
+      background: linear-gradient(240deg, rgba(255, 255, 255, 0.25) 26.5%, rgba(0, 0, 0, 0.08) 27.5%); }
   .phone div {
     position: absolute;
     left: 0;
@@ -1856,9 +1866,6 @@ header h1.line.secondary::before, header h1 .line.secondary::before, header h2.l
     border-radius: 24px;
     border: 2px solid #999;
     box-shadow: 0px 0px #999, 0px 3px 18px 3px rgba(0, 0, 0, 0.15); }
-    .multiphone .phone .screen {
-      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.9);
-      border-radius: 2px; }
     .multiphone .phone .top {
       height: 78px; }
       .multiphone .phone .top .camera {
@@ -1880,8 +1887,6 @@ header h1.line.secondary::before, header h1 .line.secondary::before, header h2.l
         .multiphone .phone .bottom div span {
           width: 48px;
           height: 48px; }
-    .multiphone .phone img {
-      max-width: 322px; }
   .multiphone .stacka {
     margin-top: 0%;
     left: 0;
@@ -3208,11 +3213,8 @@ section.content {
       max-width: 722px; }
     section.content .preview .multiphone {
       width: 97.5%; }
-    section.content .preview .phone img {
-      border: 1px solid #999; }
     section.content .preview .shot {
-      position: relative;
-      border: 1px solid #999; }
+      position: relative; }
       section.content .preview .shot img {
         width: 100%; }
     section.content .preview .shots {
