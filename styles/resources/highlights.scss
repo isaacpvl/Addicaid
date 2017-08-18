@@ -8,6 +8,7 @@
 			display: inline-block;
 			position: relative;
 			@include padding-x(1.5%);
+			white-space: nowrap;
 			&::before {
 				content: '';
 				position: absolute;

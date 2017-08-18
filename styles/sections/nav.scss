@@ -65,8 +65,11 @@
 			a {
 				fill: $white;
 				color: $white;
-				&:hover {
-					@include treset;
+				@include tmove(0, -3px);
+				&::after {
+					width: 108%;
+					@include tmove(0, 3px);
+					@include trans(0.4s);
 				}
 			}
 		}

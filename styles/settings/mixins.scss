@@ -184,17 +184,17 @@
 		border-top: $size solid $color;
 		opacity: 0;
 	}
-	@mixin inline ($size: 1px, $color: $black-2) {
+	@mixin outline ($size: 1px, $color: $black-2) {
 		@include stroke($size, $color);
 	}
-	@mixin inlines ($size: 1px, $color: $black-2) {
+	@mixin outlines ($size: 1px, $color: $black-2) {
 		@include stroke($size, $color);
 		* { @include stroke($size, $color); }
 	}
-	@mixin outline ($size: 1px, $color: $black-2) {
+	@mixin outer-outline ($size: 1px, $color: $black-2) {
 		@include outerstroke($size, $color);
 	}
-	@mixin outlines ($size: 1px, $color: $black-2) {
+	@mixin outer-outlines ($size: 1px, $color: $black-2) {
 		@include outerstroke($size, $color);
 		* { @include outerstroke($size, $color); }
 	}

@@ -54,7 +54,7 @@
 			position: relative;
 			z-index: 9;
 			margin: auto;
-			@include padding-leader(2);
+			@include padding-leader(1);
 			@include padding-trailer(2);
 			@include lineh(9);
 			text-align: center;
@@ -74,6 +74,7 @@
 			img {
 				width: auto;
 				height: 60px;
+				vertical-align: middle;
 			}
 		}
 	}

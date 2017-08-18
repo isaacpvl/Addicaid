@@ -147,8 +147,8 @@
 		@include gradient-text(left bottom, right top, 0%, $orange-f, 100%, $purple-f);
 	}
 	body.outlines {
-		li, a, span { @include inline; }
-		h1, h2, h3, h4, h5, h6 { @include inline; }
-		div, .wrap, section { @include inline; }
-		// * { @include inline; }
+		li, a, span { @include outline; }
+		h1, h2, h3, h4, h5, h6 { @include outline; }
+		div, .wrap, section { @include outline; }
+		// * { @include outline; }
 	}

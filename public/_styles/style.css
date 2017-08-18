@@ -413,6 +413,14 @@ a, a img {
   100% {
     box-shadow: 0 -24px rgba(0, 0, 0, 0.08), 0 30px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.15); } }
 
+@keyframes sectionzoom {
+  0% {
+    box-shadow: 0 -48px rgba(0, 0, 0, 0.08), 0 60px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.15); }
+  50% {
+    box-shadow: 0 -24px rgba(0, 0, 0, 0.18), 0 27px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.05); }
+  100% {
+    box-shadow: 0 -48px rgba(0, 0, 0, 0.08), 0 60px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.15); } }
+
 @keyframes reveal {
   0% {
     height: 100%; }
@@ -1040,7 +1048,8 @@ h1.block, h1 .block, h2.block, h2 .block, h3.block, h3 .block, h4.block, h4 .blo
   display: inline-block;
   position: relative;
   padding-left: 1.5%;
-  padding-right: 1.5%; }
+  padding-right: 1.5%;
+  white-space: nowrap; }
   h1.block::before, h1 .block::before, h2.block::before, h2 .block::before, h3.block::before, h3 .block::before, h4.block::before, h4 .block::before, h5.block::before, h5 .block::before, h6.block::before, h6 .block::before, p.block::before, p .block::before {
     content: '';
     position: absolute;
@@ -2278,6 +2287,7 @@ header h1.line.secondary::before, header h1 .line.secondary::before, header h2.l
 h5.lead {
   position: relative;
   margin-bottom: 24px;
+  overflow: hidden;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5); }
   h5.lead b {
@@ -2365,7 +2375,7 @@ p.lead {
     width: 70%;
     max-width: 960px; }
     .cwrap .point h1, .cwrap .point h2 {
-      width: 108%;
+      width: 100%;
       white-space: normal; }
 
 @media screen and (min-width: 1201px) {
@@ -2551,10 +2561,13 @@ nav {
       animation-fill-mode: both; }
   nav li.active a {
     fill: #fff;
-    color: #fff; }
-    nav li.active a:hover {
-      opacity: 1;
-      transform: translate(0, 0); }
+    color: #fff;
+    transform: translate(0, -3px); }
+    nav li.active a::after {
+      width: 108%;
+      transform: translate(0, 3px);
+      transition-duration: 0.4s;
+      transition-delay: 0s; }
   nav li.disabled a {
     fill: rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.5); }
@@ -3097,7 +3110,12 @@ body.home .push.reveal {
 
 section.content {
   z-index: 3;
-  overflow: hidden; }
+  overflow: hidden;
+  animation-duration: 2.1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: sectionzoom; }
   section.content .module {
     position: relative;
     z-index: 1;
@@ -3465,7 +3483,7 @@ section.feature {
     position: relative;
     z-index: 9;
     margin: auto;
-    padding-top: 24px;
+    padding-top: 12px;
     padding-bottom: 24px;
     line-height: 108px;
     text-align: center; }
@@ -3481,7 +3499,8 @@ section.feature {
       padding-right: 30px; }
     section.feature .cred img {
       width: auto;
-      height: 60px; }
+      height: 60px;
+      vertical-align: middle; }
 
 @media screen and (min-width: 1201px) {
   section.story .bio {

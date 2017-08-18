@@ -73,7 +73,7 @@
 	h5.lead {
 		position: relative;
 		@include trailer(2);
-		// overflow: hidden;
+		overflow: hidden;
 		@extend .caps-l;
 		font-weight: 400;
 		color: $black-5;
@@ -163,7 +163,6 @@
 		h1, h2 {
 			@include padding-leader(2);
 			@include padding-trailer(4);
-			// white-space: nowrap;
 			em {
 				font-weight: 900;
 			}
@@ -186,7 +185,7 @@
 			width: 70%;
 			max-width: 960px;
 			h1, h2 {
-				width: 108%;
+				width: 100%;
 				white-space: normal;
 			}
 		}

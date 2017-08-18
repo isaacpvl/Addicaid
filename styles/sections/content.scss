@@ -6,6 +6,10 @@
 	section.content {
 		z-index: 3;
 		overflow: hidden;
+		// @include trans(0.5s);
+		// @include ttiming(ease-out);
+		@include animateinf(2.1s);
+		@include sectionzoom;
 		.module {
 			position: relative;
 			z-index: 1;

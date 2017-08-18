@@ -202,7 +202,7 @@
 	});
 
 // outline view toggle
-	$(body).on('mouseup', '#outlines', function(event) {
+	$(body).on('mouseup', '#menu', function(event) {
 		event.preventDefault();
 		$('body').toggleClass('outlines');
 	});

@@ -54,6 +54,12 @@
 		50% { box-shadow: 0 -16px rgba($black, 0.18), 0 18px rgba($black, 0.18), 0 0 0 1px $black-05; }
 		100% { box-shadow: 0 -24px rgba($black, 0.08), 0 30px rgba($black, 0.08), 0 0 0 1px $black-15; }
 	}
+	@mixin sectionzoom { animation-name: sectionzoom; }
+	@keyframes sectionzoom {
+		0% { box-shadow: 0 -48px rgba($black, 0.08), 0 60px rgba($black, 0.08), 0 0 0 1px $black-15; }
+		50% { box-shadow: 0 -24px rgba($black, 0.18), 0 27px rgba($black, 0.18), 0 0 0 1px $black-05; }
+		100% { box-shadow: 0 -48px rgba($black, 0.08), 0 60px rgba($black, 0.08), 0 0 0 1px $black-15; }
+	}
 
 // push reveal
 	@mixin reveal { animation-name: reveal; }
