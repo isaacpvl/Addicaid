@@ -2679,7 +2679,7 @@ nav {
         width: 102%;
         height: 18px;
         border-radius: 2px;
-        background: rgba(20,20,20,.3);
+        background: linear-gradient(to right, #20c9cf 0%, #6de4e8 100%);
         box-shadow: 0px 3px 15px rgba(85, 85, 85, 0.08);
         animation-duration: 0.35s;
         animation-delay: 1.2s;
@@ -3965,7 +3965,7 @@ body.sub header {
       left: 0;
       right: 0; }
     body.sub header .title h1 {
-      max-width: 720px;
+      max-width: 1220px;
       margin: auto;
       margin-bottom: 36px;
       animation-duration: 0.8s;
@@ -4224,6 +4224,7 @@ header {
 header.about {
   background: url(../_img/bks/about.jpg);
   background-size: cover;
+  background-position: center bottom;
   opacity: 1; }
 
 header.solution {
@@ -4256,3 +4257,9 @@ header.approach {
 section.content .module .info.more h6 {
   background: transparent;
   color: #d2d2d2; }
+
+.herotext {
+  text-align: left; }
+
+section {
+  padding-top: 0px; }

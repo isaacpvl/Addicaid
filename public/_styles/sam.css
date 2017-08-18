@@ -6,6 +6,7 @@ header {
 header.about {
   background: url(../_img/bks/about.jpg);
   background-size: cover;
+  background-position: center bottom;
   opacity: 1; }
 
 header.solution {
@@ -38,3 +39,9 @@ header.approach {
 section.content .module .info.more h6 {
   background: transparent;
   color: #d2d2d2; }
+
+.herotext {
+  text-align: left; }
+
+section {
+  padding-top: 0px; }
