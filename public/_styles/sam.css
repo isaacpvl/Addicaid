@@ -1,0 +1,26 @@
+header {
+  background: url(../_img/bks/rgm-head.png);
+  background-size: cover;
+  opacity: 1; }
+
+header.about {
+  background: url(../_img/bks/about.jpg);
+  background-size: cover;
+  opacity: 1; }
+
+.white {
+  background: white !important; }
+
+.hide {
+  display: none !important; }
+
+.small img {
+  height: 500px !important;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  width: 100%; }
+
+section.content .module .info.more h6 {
+  background: transparent;
+  color: #d2d2d2; }

@@ -30,16 +30,22 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
-		color: $white;
+		color: $black;
 		border-radius: 2px;
-		background: $secondary;
-		@include gradient-hor(lighten($secondary, 0%), lighten($secondary, 20%))
+		background: $white;
+		border: 1.5px solid $black;
+		opacity: 1;
+		
 		@include noselect;
 		&:hover {
 			color: $white;
+			background: #d7dc4c;
+			border: 1.5px solid #d7dc4c;
 		}
 		&:active, &.active {
-			color: $white;
+			color: $secondary;
+			background: #d7dc4c;
+			border: 1.5px solid #d7dc4c;
 		}
 	}
 	.button.disabled {

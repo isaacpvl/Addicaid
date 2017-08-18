@@ -18,8 +18,8 @@
 		var footer = $('#footer');
 		var tagline = $('#tagline');
 		var navToggle = true;
-		var loadDelay = 1200;
-		var introStart = 1000;
+		var loadDelay = 0;
+		var introStart = 0;
 
 
 // Intro sequence
@@ -35,10 +35,10 @@
 
 			setTimeout(function() {
 				home.addClass('reveal');
-			}, 1200);
+			}, loadDelay);
 			setTimeout(function() {
 				nava.addClass('full');
-			}, 2400);
+			}, loadDelay*2);
 
 		// logo slogan expand
 			var sloganStartTimer = setTimeout(function() {
@@ -72,9 +72,9 @@
 					handler: function(event, direction) {
 					nav.toggleClass('featurebg');}, offset: 60
 				});
-			}, 2000);
+			}, introStart*2);
 
-		}, 1000+introStart);
+		}, introStart+introStart);
 	});
 
 // lock iOS scroll
@@ -142,7 +142,7 @@
 	});
 
 // outline view toggle
-	$(body).on('mouseup', '#outlines', function(event) {
+	$(body).on('mouseup', '#menu', function(event) {
 		event.preventDefault();
 		$('body').toggleClass('outlines');
 	});

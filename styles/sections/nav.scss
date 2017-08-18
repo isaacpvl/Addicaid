@@ -277,7 +277,7 @@
 			&::after {
 				bottom: 0;
 				height: 4px;
-				background: $black-4;
+				background: $primary !important;
 				box-shadow: none;
 				@include treset;
 				@include trans(0.4s);

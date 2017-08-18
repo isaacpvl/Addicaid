@@ -1,5 +1,5 @@
 $(window).load(function() {
-	var introStart = 1000;
+	var introStart = 0;
 
 	if ($('body').hasClass('home')) {
 		setTimeout(function() {

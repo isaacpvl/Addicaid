@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 // Settings
 	@import "settings/reset";
 	@import "settings/mixins";
@@ -27,7 +27,6 @@
 	@import "sections/-projects";
 	@import "sections/subpage";
 
-	@import "sam";
 
 
 // Base styles
@@ -50,7 +49,7 @@
 		max-width: $max-width;
 		height: 100%;
 		margin: auto;
-		font-family: $sans;
+		font-family: $serif;
 		font-size: $basefont;
 		line-height: $baseline;
 	}
@@ -78,6 +77,8 @@
 			background: $bodybg;
 		}
 	}
+
+	
 	.base {
 		position: fixed;
 		top: 0;
@@ -154,3 +155,5 @@
 		div, .wrap, section { @include inline; }
 		// * { @include inline; }
 	}
+
+	@import "sam";

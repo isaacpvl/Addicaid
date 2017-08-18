@@ -17,8 +17,8 @@
 		var visualtop =$('.fout');
 		var visualbot =$('.fin');
 		var navToggle = true;
-		var loadDelay = 1200;
-		var introStart = 1000;
+		var loadDelay = 0;
+		var introStart = 0;
 
 	// jQuery(function() {
 	// 	var body = $('body');
@@ -202,7 +202,7 @@
 	});
 
 // outline view toggle
-	$(body).on('mouseup', '#outlines', function(event) {
+	$(body).on('mouseup', '#menu', function(event) {
 		event.preventDefault();
 		$('body').toggleClass('outlines');
 	});
