@@ -110,7 +110,7 @@
 				height: 5px;
 				border-radius: 1.5px;
 				box-shadow: 0px 2px 8px 2px $black-1;	
-				@include gradient-hor(lighten($primary-ll, 5%), lighten($primary-ll, 20%))
+				background: $white;
 				@include trans(0.4s);
 			}
 			.menu {

@@ -13,6 +13,19 @@ background-size: cover;
 opacity: 1;
 }
 
+header.solution {
+background: url(../_img/bks/astro.jpg);
+background-size: cover;
+opacity: 1;
+}
+
+header.approach {
+background: url(../_img/bks/approach.jpg);
+background-size: cover;
+background-position: right top;
+opacity: 1;
+}
+
 .white {
 	background: white !important;
 }
