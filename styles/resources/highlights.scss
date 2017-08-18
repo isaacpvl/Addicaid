@@ -14,7 +14,7 @@
 				@include onepos(0);
 				z-index: -1;
 				border-radius: 3px;
-				@include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
+				@include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%));
 				opacity: .8;
 				@include trans(0.4s);
 				@include animatereset(0.6s, 2.5s);

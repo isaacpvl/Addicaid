@@ -4238,6 +4238,10 @@ header.approach {
   background-position: right top;
   opacity: 1; }
 
+.img_s img {
+  width: 400px;
+  height: auto; }
+
 .white {
   background: white !important; }
 
@@ -4263,3 +4267,33 @@ section.content .module .info.more h6 {
 
 section {
   padding-top: 0px; }
+
+.left {
+  float: left; }
+
+section.content .cwrap.modulebg {
+  margin-top: 0px; }
+
+img.abso {
+  position: absolute;
+  left: 4%;
+  height: 400px;
+  top: 25%;
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2); }
+
+.bs {
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2); }
+
+img.abso-s {
+  position: absolute;
+  left: 21%;
+  height: 400px;
+  top: 37%;
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2); }
+
+img.abso.r {
+  right: -50%;
+  left: initial;
+  height: 350px;
+  z-index: -2;
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2); }
