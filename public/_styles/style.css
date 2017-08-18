@@ -2679,7 +2679,7 @@ nav {
         width: 102%;
         height: 18px;
         border-radius: 2px;
-        background: linear-gradient(to right, #20c9cf 0%, #6de4e8 100%);
+        background: rgba(20,20,20,.3);
         box-shadow: 0px 3px 15px rgba(85, 85, 85, 0.08);
         animation-duration: 0.35s;
         animation-delay: 1.2s;
@@ -4227,7 +4227,7 @@ header.about {
   opacity: 1; }
 
 header.solution {
-  background: url(../_img/bks/astro.jpg);
+  background: url(../_img/bks/solution2.jpg);
   background-size: cover;
   opacity: 1; }
 
