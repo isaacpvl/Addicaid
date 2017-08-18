@@ -14,7 +14,8 @@
 				@include onepos(0);
 				z-index: -1;
 				border-radius: 3px;
-				background: $secondary-ll;
+				@include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
+				opacity: .8;
 				@include trans(0.4s);
 				@include animatereset(0.6s, 2.5s);
 				@include atiming(ease-out);
@@ -33,6 +34,7 @@
 				z-index: -1;
 				height: 24px;
 				background: $primary-ll;
+				opacity: .9;
 				@include trans(0.4s);
 				@include animatereset(0.4s, 3s);
 				@include atiming(ease-out);
@@ -48,6 +50,7 @@
 				&::before {
 					@include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
 					box-shadow: 0px 3px 12px $black-1;
+					opacity: .9;
 				}
 			}
 			&.line, .line {

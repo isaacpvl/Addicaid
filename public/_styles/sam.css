@@ -11,6 +11,9 @@ header.about {
 .white {
   background: white !important; }
 
+.c-white {
+  color: white; }
+
 .hide {
   display: none !important; }
 
