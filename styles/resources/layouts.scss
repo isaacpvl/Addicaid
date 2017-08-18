@@ -100,7 +100,7 @@
 
 // content
 	.detail, .overview, .point {
-		font-family: $sans;
+		// font-family: $sans;
 		position: relative;
 		z-index: 2;
 		width: 75%;
@@ -164,7 +164,7 @@
 			@include padding-leader(2);
 			@include padding-trailer(4);
 			em {
-				font-weight: 900;
+				// font-weight: 900;
 			}
 		}
 	}

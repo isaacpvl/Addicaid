@@ -6,14 +6,14 @@
 	a, a img {
 		text-decoration: underline;
 		cursor: pointer;
-		color: $secondary;
+		color: $primary;
 		@include trans(0.3s);
 		&:hover {
-			color: $secondary-l;
+			color: $primary-l;
 			@include trans(0.15s);
 		}
 		&:active {
-			color: $secondary-d;
+			color: $primary-d;
 			@include trans(0.075s);
 		}
 		&.disabled {
@@ -32,8 +32,8 @@
 		white-space: nowrap;
 		color: $white;
 		border-radius: 2px;
-		background: $secondary;
-		@include gradient-hor(lighten($secondary, 0%), lighten($secondary, 20%))
+		background: $primary;
+		// @include gradient-hor(lighten($primary, 0%), lighten($primary, 20%))
 		@include noselect;
 		&:hover {
 			color: $white;
@@ -48,8 +48,8 @@
 		opacity: 0.3;
 		&:hover, &:active, &.active {
 			color: $white;
-			background: $secondary;
-			// box-shadow: inset 0 0 0 1px $secondary, inset 0 0px $white, 0 0px $secondary;
+			background: $primary;
+			// box-shadow: inset 0 0 0 1px $primary, inset 0 0px $white, 0 0px $primary;
 			@include tmove(0, 0);
 		}
 	}
@@ -75,11 +75,11 @@
 			@include lineh(4.5);
 			font-size: 14px;
 			&:hover {
-				box-shadow: inset 0 0 0 1px $secondary, inset 0 54px $white, 0 3px $secondary;
+				box-shadow: inset 0 0 0 1px $primary, inset 0 54px $white, 0 3px $primary;
 				@include tmove(0, -3px);
 			}
 			&:active, &.active {
-				box-shadow: inset 0 0 0 1px $secondary, inset 0 54px $white-8, 0 -3px $secondary;
+				box-shadow: inset 0 0 0 1px $primary, inset 0 54px $white-8, 0 -3px $primary;
 				@include tmove(0, 1px);
 			}
 		}

@@ -8,7 +8,8 @@
 		width: 100%;
 		border-radius: 4px 4px 2px 2px;
 		@include border(1px, $dark-l);
-		background: lighten($dark-l, 20%);
+		box-shadow: 0px 0px $dark-l, 0px 3px 15px 1px $black-25;
+		background: $dark-l;
 		overflow: hidden;
 		@include trans(0.5s);
 		img {
@@ -473,18 +474,25 @@
 		z-index: 1;
 		top: 24%;
 		width: 30%;
-		// max-width: 220px;
 		padding: 0 10px;
 		border-radius: 15px;
 		@include border(1px, $dark-l);
+		box-shadow: 0px 0px $dark-l, 0px 3px 18px 3px $black-25;
 		background: $white;
 		text-align: center;
 		@include trans(0.6s);
+		.screen {
+			position: relative;
+			@include outer-outline(2px, $black-9);
+			border-radius: 1px;
+			background: $dark;
+		}
 		img {
 			width: 100%;
 			height: auto;
-			opacity: 0 !important;
 			@include noselect;
+			pointer-events: none;
+			opacity: 0;
 		}
 		div {
 			position: absolute;
@@ -493,8 +501,8 @@
 		}
 		span {
 			display: block;
-			margin: 0 auto;
-			background: lighten($dark-l, 20%);
+			margin: auto;
+			background: $black-75;
 		}
 		.top {
 			position: relative;
@@ -522,15 +530,29 @@
 			width: 100%;
 			height: 54px;
 			span {
-				@include border(1px, $dark-l);
-				background: none;
+				// @include border(1px, $dark-l);
+				background: linear-gradient(135deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+				border-radius: 50%;
+				&::after {
+					content: '';
+					display: block;
+					position: relative;
+					z-index: 10;
+					border-radius: 50%;
+					background: $white;
+				}
 			}
 			div {
 				top: 9px;
 				span {
 					width: 34px;
 					height: 34px;
-					border-radius: 17px;
+					&::after {
+						width: 88%;
+						height: 88%;
+						top: 6%;
+						left: 6%;
+					}
 				}
 			}
 		}
@@ -587,7 +609,6 @@
 					span {
 						width: 26px;
 						height: 26px;
-						border-radius: 13px;
 					}
 				}
 			}
@@ -624,7 +645,6 @@
 					span {
 						width: 18px;
 						height: 18px;
-						border-radius: 9px;
 					}
 				}
 			}
@@ -638,6 +658,9 @@
 	.multiphone {
 		position: relative;
 		width: 100%;
+		max-width: 100%;
+		@include trans(0.8s);
+		@include perspective(420px);
 		.phone.under {
 			position: relative;
 			z-index: 1;
@@ -653,6 +676,12 @@
 			max-width: 288px;
 			padding: 0 12px;
 			border-radius: 24px;
+			@include border(2px, $dark-l);
+			box-shadow: 0px 0px $dark-l, 0px 3px 18px 3px $black-25;
+			.screen {
+				@include outer-outline(2px, $black-9);
+				border-radius: 2px;
+			}
 			.top {
 				height: 78px;
 				.camera {
@@ -679,7 +708,6 @@
 					span {
 						width: 48px;
 						height: 48px;
-						border-radius: 24px;
 					}
 				}
 			}
@@ -688,19 +716,46 @@
 			}
 		}
 		.stacka {
+			margin-top: 0%;
 			left: 0;
-			z-index: 3;
+			z-index: 1;
 			@include trans(0.8s);
 		}
 		.stackb {
+			margin-top: 0%;
 			left: 32.5%;
 			z-index: 2;
 			@include trans(0.7s);
 		}
 		.stackc {
+			margin-top: 0%;
 			right: 0;
-			z-index: 1;
+			z-index: 3;
 			@include trans(0.6s);
+		}
+	}
+	.multiphone.perspective {
+		max-width: 782px;
+		.stacka {
+			margin-top: 0%;
+			left: 0;
+			@include trans(0.6s);
+			@include tfree3d(0.9, 0.9, 2.5, 25, 25, -180, 20deg, 0px, 48px, -24px);
+			box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-25;
+		}
+		.stackb {
+			margin-top: -1.25%;
+			left: 32.5%;
+			@include trans(0.7s);
+			@include tfree3d(0.95, 0.9, 2, 15, 20, -90, 12.5deg, 0px, 0px, 0px);
+			box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-25;
+		}
+		.stackc {
+			margin-top: -2.5%;
+			right: 0;
+			@include trans(0.8s);
+			@include tfree3d(1, 0.9, 1.5, 7.5, 15, -45, 7.5deg, 0px, -12px, 24px);
+			box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-25;
 		}
 	}
 
@@ -738,7 +793,6 @@
 							span {
 								width: 32px;
 								height: 32px;
-								border-radius: 16px;
 							}
 						}
 					}
@@ -779,7 +833,6 @@
 							span {
 								width: 28px;
 								height: 28px;
-								border-radius: 14px;
 							}
 						}
 					}

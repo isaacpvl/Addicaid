@@ -44,21 +44,24 @@
 	header, section.feature {
 		h1, h2, h3, h4, h5, h6, p {
 			&.block, .block {
-				font-weight: 700;
+				// font-weight: 700;
 				text-shadow: 0px 2px 7px $black-1;
 				&::before {
-					@include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
+					// @include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
+					background: $secondary;
 					box-shadow: 0px 3px 12px $black-1;
 				}
 			}
 			&.line, .line {
 				&::before {
-					@include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
+					// @include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
+					background: $secondary;
 					box-shadow: 0px 3px 12px $black-1;	
 				}
 				&.secondary {
 					&::before {
-						@include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
+						// @include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
+						background: $secondary;
 					}
 				}
 			}

@@ -20,10 +20,14 @@
 		$warnock						: "warnock-pro",serif;
 		$utopia							: "utopia-std-subhead",serif;
 		$abril							: "abril-text",serif;
+		$clarendon						: "clarendon-urw",serif;
+		$clarendon						: "clarendon-urw",serif;
+		$clarendon-cond					: "clarendon-urw-extra-narrow",serif;
+		$clarendon-text					: "clarendon-text-pro",serif;
 
 	// sans serif fonts
 		$quiroh							: "quiroh",sans-serif;
-		$rubik							: "Rubik",sans-serif;
+		$rubik							: "rubik",sans-serif;
 		$overpass						: "overpass",sans-serif;
 		$soleil							: "soleil",sans-serif;
 		$facit							: "jaf-facitweb",sans-serif;
@@ -76,7 +80,7 @@
 		}
 		em {
 			font-style: italic;
-			font-weight: 600;
+			// font-weight: 600;
 		}
 		br {
 			@include noselect;
@@ -87,7 +91,7 @@
 			@include lineh(3.5);
 			font-size: 24px;
 			text-align: left;
-			letter-spacing: -0.01em;
+			letter-spacing: -0.0125em;
 		}
 		p.small {
 			@include lineh(3.5);
@@ -97,16 +101,16 @@
 			@include lineh(4);
 			font-size: 26px;
 		}
-		h1, h2, h3, h4, h5 {
+		h1, h2, h3, h4, h5, h6 {
 			letter-spacing: -0.0125em;
 			font-weight: 600;
 		}
 		h1 {
-			@include lineh(9);
+			@include lineh(8.5);
 			font-size: 72px;
 		}
 		h2 {
-			@include lineh(7.5);
+			@include lineh(7);
 			font-size: 60px;
 		}
 		h3 {

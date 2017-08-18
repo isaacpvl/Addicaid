@@ -8,8 +8,8 @@
 		overflow: hidden;
 		// @include trans(0.5s);
 		// @include ttiming(ease-out);
-		@include animateinf(2.1s);
-		@include sectionzoom;
+		// @include animateinf(2.1s);
+		// @include sectionzoom;
 		.module {
 			position: relative;
 			z-index: 1;
@@ -20,79 +20,41 @@
 			@include padding-trailer(9);
 			.info {
 				width: 36%;
-				@include leader(5.5);
+				@include leader(3);
 				text-align: left;
+				h6 {
+					display: inline-block;
+					@include trailer(1.5);
+					margin-left: -12px;
+					@include padding-x(12px);
+					@include lineh(2.75);
+					@extend .caps-l;
+					font-weight: 400;
+					background: $secondary;
+				}
 				h2 {
 					@include lineh(5.5);
-					margin-left: -2px;
-					@extend .caps-d;
-					// white-space: nowrap;
+					font-weight: 700;
+					&::after {
+						content: '';
+						display: block;
+						position: relative;
+						width: 54px;
+						height: 9px;
+						@include leader(2);
+						@include trailer(2);
+						background: $black;
+					}
 				}
 				p {
 					@include leader(1);
-					@include trailer(3.5);
-				}
-				h2.short {
-					@include lineh(4.5);
-					@include trailer(2);
-				}
-				.role {
-					position: relative;
-					width: 105%;
-					@include leader(1.5);
-					padding-left: 57px;
-					@include lineh(2.5);
-					font-size: 20px;
-					// white-space: nowrap;
-					i {
-						font-size: 16px;
-						letter-spacing: -0.02em;
-						opacity: 0.6;
-					}
-					h6 {
-						@extend .caps-l;
-					}
-				}
-				.button {
-					min-width: 55%;
-				}
-				.button#livelink {
-					display: none;
-				}
-			}	
-			.info.more {
-				@include leader(6);
-				h2 {
-					@include trailer(2);
-					font-family: $sans;
-					font-weight: 700;
-					letter-spacing: -0.01em;
-					text-transform: none;
-					white-space: normal;
-				}
-				h6 {
-					float: left;
-					@include leader(-5);
-					@include lineh(2.75);
-					@include padding-x(12px);
-					white-space: nowrap;
-					@extend .caps;
-					color: $white;
-					background: $primary;
-					span {
-						letter-spacing: -0.04em;
-					}
-				}
-				p {
 					@include trailer(2.5);
 				}
 				.button {
-					@include leader(0);
+					display: none;
+					min-width: 55%;
 				}
-				&.ileft h6 {
-					margin-left: 0%;
-				}
-			}
+			}	
 		}
 		.module.offset {
 			@include trailer(4);
@@ -112,7 +74,7 @@
 			position: relative;
 			z-index: 2;
 			width: 62%;
-			max-width: 782px;
+			// max-width: 782px;
 			height: 100%;
 			margin-left: -2.5%;
 			cursor: pointer;

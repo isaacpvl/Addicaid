@@ -9,7 +9,7 @@
 		width: 100%;
 		min-width: 320px;
 		max-width: $max-width;
-		height: 120px;
+		height: 108px;
 		text-align: right;
 		fill: $white;
 		color: $white;
@@ -112,8 +112,9 @@
 				width: 100%;
 				height: 5px;
 				border-radius: 1.5px;
-				box-shadow: 0px 2px 8px 2px $black-1;	
-				@include gradient-hor(lighten($primary-ll, 5%), lighten($primary-ll, 20%))
+				// box-shadow: 0px 2px 8px 2px $black-1;	
+				// @include gradient-hor(lighten($primary-ll, 5%), lighten($primary-ll, 20%))
+				background: $white;
 				@include trans(0.4s);
 			}
 			.menu {
@@ -147,8 +148,9 @@
 				width: 0px;
 				height: 6px;
 				border-radius: 2px;
-				@include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
-				box-shadow: 0px 2px 9px $black-1;
+				// box-shadow: 0px 2px 9px $black-1;
+				// @include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
+				background: $white;
 				@include trans(0.4s);
 			}
 			span:first-of-type {
@@ -208,9 +210,9 @@
 					width: 102%;
 					height: 18px;
 					border-radius: 2px;
-					// @include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
-					@include gradient-hor(lighten($secondary, 0%), lighten($secondary, 20%))
-					box-shadow: 0px 3px 15px $black-08;	
+					// box-shadow: 0px 3px 15px $black-08;	
+					// @include gradient-hor(lighten($primary, 0%), lighten($primary, 20%))
+					background: $primary-d;
 					@include animatereset(0.35s, 1.2s);
 					@include lineinleft;
 				}
@@ -266,7 +268,7 @@
 // sticky state
 	nav.sticky {
 		z-index: 95;
-		@include gradient-vert($black-2, $black-0);
+		@include gradient-vert($black-15, $black-0);
 		&::before {
 			height: 60px;
 			background: $white-9;
@@ -308,20 +310,13 @@
 				fill: $featurebg;
 				color: $featurebg;
 				&::after {
-					left: -6%;
-					bottom: -10px;
-					width: 108%;
-					height: 18px;
-					@include gradient-hor($light, $white);
-					box-shadow: 0px 2px 9px 1px $black-1;
-				}
-				&::after {
 					left: -8%;
 					bottom: -12px;
 					width: 110%;
 					height: 18px;
-					@include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
-					box-shadow: 0px 2px 9px 1px $black-1;
+					// box-shadow: 0px 2px 9px 1px $black-1;
+					// @include gradient-hor($light, $white);
+					background: $white;
 				}
 				&:hover, &.hover {
 					&::after {
@@ -419,8 +414,10 @@
 					bottom: -12px;
 					width: 110%;
 					height: 18px;
-					@include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
-					box-shadow: 0px 2px 9px 1px $black-1;
+					// box-shadow: 0px 2px 9px 1px $black-1;
+					// @include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
+					box-shadow: none;
+					background: $primary-d;
 				}
 			}
 		}
