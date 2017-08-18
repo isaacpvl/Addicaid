@@ -1703,7 +1703,6 @@ header h1.line.secondary::before, header h1 .line.secondary::before, header h2.l
   transition-delay: 0s; }
   .phone .screen {
     position: relative;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.9);
     border-radius: 1px;
     background: #666; }
   .phone img {
@@ -1715,8 +1714,7 @@ header h1.line.secondary::before, header h1 .line.secondary::before, header h2.l
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    pointer-events: none;
-    opacity: 0; }
+    pointer-events: none; }
   .phone div {
     position: absolute;
     left: 0;
@@ -1857,7 +1855,7 @@ header h1.line.secondary::before, header h1 .line.secondary::before, header h2.l
     padding: 0 12px;
     border-radius: 24px;
     border: 2px solid #999;
-    box-shadow: 0px 0px #999, 0px 3px 18px 3px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0px 0px #999, 0px 3px 18px 3px rgba(0, 0, 0, 0.15); }
     .multiphone .phone .screen {
       box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.9);
       border-radius: 2px; }
@@ -1911,21 +1909,21 @@ header h1.line.secondary::before, header h1 .line.secondary::before, header h2.l
     transition-duration: 0.6s;
     transition-delay: 0s;
     transform: scale3d(0.9, 0.9, 2.5) rotate3d(25, 25, -180, 20deg) translate3d(0px, 48px, -24px);
-    box-shadow: -8px 9px #999, -10px 12px 24px 3px rgba(0, 0, 0, 0.25); }
+    box-shadow: -8px 9px #999, -10px 12px 24px 3px rgba(0, 0, 0, 0.15); }
   .multiphone.perspective .stackb {
     margin-top: -1.25%;
     left: 32.5%;
     transition-duration: 0.7s;
     transition-delay: 0s;
     transform: scale3d(0.95, 0.9, 2) rotate3d(15, 20, -90, 12.5deg) translate3d(0px, 0px, 0px);
-    box-shadow: -8px 9px #999, -10px 12px 24px 3px rgba(0, 0, 0, 0.25); }
+    box-shadow: -8px 9px #999, -10px 12px 24px 3px rgba(0, 0, 0, 0.15); }
   .multiphone.perspective .stackc {
     margin-top: -2.5%;
     right: 0;
     transition-duration: 0.8s;
     transition-delay: 0s;
     transform: scale3d(1, 0.9, 1.5) rotate3d(7.5, 15, -45, 7.5deg) translate3d(0px, -12px, 24px);
-    box-shadow: -8px 9px #999, -10px 12px 24px 3px rgba(0, 0, 0, 0.25); }
+    box-shadow: -8px 9px #999, -10px 12px 24px 3px rgba(0, 0, 0, 0.15); }
 
 @media screen and (max-width: 640px) {
   .multiphone .phone {
