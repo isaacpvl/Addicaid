@@ -1,0 +1,163 @@
+
+
+// Header styles
+// ------------------------------------------------------------
+//
+	header {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		width: 100%;
+		min-width: 320px;
+		max-width: $max-width;
+		overflow: hidden;
+		@include trans(0.45s);
+		@extend .timingcb1;
+		* { @extend .timingcb1; }
+		img {
+			@include noselect;
+		}
+		.wrap {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			max-width: 1440px;
+			height: 100%;
+			margin: auto;
+			@include trans(0.3s);
+		}
+	}
+	.push {
+		position: relative;
+		z-index: -1;
+	}
+	header, .push {
+		height: 100%;
+	}
+
+	body.home {
+		header {
+			.wrap {
+				@include torigin(25% 50%);
+			}
+		}
+		.push {
+			height: 100%;
+		}
+		.push.reveal {
+			@include animate(0.6s);
+			@include reveal;
+		}
+	}
+
+
+// Tagline styles
+// ------------------------------------------------------------
+//
+	.tagline {
+		position: relative;
+		z-index: 2;
+		display: inline-block;
+		width: 90%;
+		height: 80%;
+		text-align: left;
+		@include animatereset(0.8s, 0.8s);
+		@include fadeinup;
+		> span {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			max-width: 100%;
+		}
+		h1 {
+			@include leader(0.5);
+			@include torigin(25% 50%);
+			@include fadeindown;
+			@include trans(0.3s);
+			white-space: nowrap;
+			&:nth-of-type(1) {
+				@include animatereset(0.8s*1.5, 1s*1.5);
+			}
+			&:nth-of-type(2) {
+				@include animatereset(0.65s*1.5, 1.15s*1.5);
+			}
+			&:nth-of-type(3) {
+				@include animatereset(0.5s*1.5, 1.3s*1.5);
+			}
+		}
+	}
+	@media screen and (min-width: 960px) {
+		body.fold {
+			.tagline {
+				>span {
+					@include trans(0.3s);
+					h1:nth-of-type(1) {
+						@include tmove(-24px, -42px*1.5);
+					}
+					h1:nth-of-type(2) {
+						@include tmovescale(0.96, -42px, -33px*1.5);
+					}
+					h1:nth-of-type(3) {
+						@include tmovescale(0.92, -56px, -24px*1.5);
+					}
+				}
+			}
+		}
+	}
+
+
+// Media queries
+// ------------------------------------------------------------
+//
+	@media screen and (min-width: $max-width+1) {
+		header {
+			.wrap {
+				width: 100%;
+			}
+		}
+	}
+	@media screen and (min-width: 960px) {
+		body.fold {
+			header {
+				.wrap {
+					@include tscale(0.92);
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 959px) {
+		body.home {
+			header {
+				.wrap {
+					@include torigin(50% 50%);
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 640px) {
+		header, .push {
+			height: 100%;
+		}
+		body.home {
+			header, .push {
+				.wrap {
+					@include torigin(70% 50%);
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 420px) {
+		header {
+			.wrap {
+				width: 100%;
+			}
+		}
+		body.home {
+			header {
+				.wrap {
+					@include torigin(100% 50%);
+				}
+			}
+		}
+	}

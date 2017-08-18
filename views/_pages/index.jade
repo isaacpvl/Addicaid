@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title Addicaid
+		include ../components/head
+
+	body.home
+		.twrap
+			a#home
+			include ../components/nav
+			include ../pages/home
+			include ../components/footer
+		include ../components/base
+
+	include ../components/loader
+
+	script(src="/_scripts/plugins.js")
+	script(src="/_scripts/home.js")

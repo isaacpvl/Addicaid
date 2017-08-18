@@ -1,0 +1,350 @@
+
+
+// Content styles
+// ------------------------------------------------------------
+//
+	.head {
+		position: relative;
+		width: 100%;
+		@include leader(8);
+		@include trailer(6);
+		text-align: center;
+		@include trans(0.5s);
+		h5 {
+			display: inline-block;
+			color: $black-5;
+			@extend .caps;
+			&::after {
+				content:'';
+				position: absolute;
+				bottom: -20px;
+				left: 50%;
+				width: 45px;
+				height: 5px;
+				margin-left: -23px;
+				background: $black-5;
+			}
+		}
+	}
+	.itemhead {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		@include leader(13);
+		@include trailer(5);
+		h2, h3 {
+			position: relative;
+			@extend .caps-d;
+			&::after {
+				content:'';
+				position: absolute;
+				left: 50%;
+				background: $black;
+			}
+		}
+		h2 {
+			@include padding-leader(4);
+			@include padding-trailer(4);
+			&::after {
+				bottom: 16%;
+				height: 7px;
+				width: 72px;
+				margin-left: -36px;
+			}
+		}
+		h3 {
+			@include padding-leader(4);
+			@include padding-trailer(2);
+			&::after {
+				bottom: 7.5%;
+				height: 5px;
+				width: 54px;
+				margin-left: -27px;
+			}
+		}
+		br {
+			display: none;
+		}
+	}
+	.itemhead.short {
+		@include leader(0);
+		@include padding-leader(6);
+	}
+	h5.lead {
+		position: relative;
+		@include trailer(2);
+		// overflow: hidden;
+		@extend .caps-l;
+		font-weight: 400;
+		color: $black-5;
+		b {
+			margin-left: 6px;
+			color: $black;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 11px;
+			width: 100%;
+			height: 1px;
+			margin-left: 24px;
+			background: $black-4;
+		}
+	}
+	p.lead {
+		@include padding-leader(1);
+		@extend .large;
+		font-weight: 600;
+		font-style: italic;
+	}
+
+// content
+	.detail, .overview, .point {
+		font-family: $sans;
+		position: relative;
+		z-index: 2;
+		width: 75%;
+		max-width: 1020px;
+		margin: auto;
+		text-align: left;
+		p {
+			@include padding-trailer(2.5);
+			&:last-of-type {
+				@include padding-trailer(0);
+			}
+		}
+		p.narrow {
+			width: 75%;
+		}
+		.button {
+			@include leader(3);
+		}
+	}
+	.detail {
+		@include padding-leader(6);
+		@include padding-trailer(6);
+		text-align: center;
+		.button {
+			@include leader(6);
+			min-width: 35%;
+		}
+	}
+	.detail.two-col {
+		p {
+			display: inline-block;
+			vertical-align: top;
+			width: 47.5%;
+			&:last-of-type {
+				margin-left: 5%;
+			}
+		}
+	}
+
+	.overview {
+		@include trailer(9);
+		text-align: center;
+		.detail {
+			width: 100%;
+			@include padding-leader(6);
+			@include padding-trailer(4);
+		}
+		p.lead {
+			padding-right: 7.5%;
+			text-align: center;
+		}
+	}
+
+	.point {
+		text-align: left;
+		position: relative;
+		display: inline-block;
+		@include padding-leader(8);
+		@include padding-trailer(5);
+		h1, h2 {
+			@include padding-leader(2);
+			@include padding-trailer(4);
+			// white-space: nowrap;
+			em {
+				font-weight: 900;
+			}
+		}
+	}
+
+	.cwrap {
+		position: relative;
+		width: 100%;
+		height: auto;
+		// @include padding-x(5%);
+		overflow: visible;
+		&.cleft {
+			text-align: left;
+		}
+		&.cright {
+			text-align: right;
+		}
+		.point {
+			width: 70%;
+			max-width: 960px;
+			h1, h2 {
+				width: 108%;
+				white-space: normal;
+			}
+		}
+	}
+
+
+// Media queries
+// ------------------------------------------------------------
+//
+	@media screen and (min-width: 1201px) {
+		.overview, .detail.two-col {
+			width: 100%;
+			max-width: 1280px;
+		}
+	}
+	@media screen and (max-width: 1200px) {
+		.detail, .overview, .point {
+			width: 80%;
+			max-width: 100%;
+		}
+		.detail.two-col {
+			p {
+				display: block;
+				width: 100%;
+				&:last-of-type {
+					margin-left: 0;
+				}
+			}
+		}
+		.overview {
+			.detail {
+				@include padding-leader(2);
+				p {
+					@include padding-leader(2);
+					@include padding-trailer(1);
+				}
+			}
+			p.lead {
+				padding-right: 0;
+				text-align: left;
+			}
+		}
+		.point {
+			h1, h2 {
+				width: 100%;
+				@include padding-trailer(2);
+				white-space: normal;
+			}
+			p {
+				@include padding-leader(2);
+				@include padding-trailer(1);
+			}
+			br {
+				display: none;
+			}
+		}
+	}
+	@media screen and (max-width: 959px) {
+		.head {
+			@include leader(12);
+			@include trailer(6);
+		}
+		.detail, .overview, .point {
+			width: 100%;
+			max-width: 680px;
+		}
+	}
+	@media screen and (max-width: 640px) {
+		.head {
+			@include leader(8);
+			@include trailer(3);
+			h5 {
+				&::after {
+					bottom: -18px;
+					width: 36px;
+					height: 4px;
+					margin-left: -18px;
+				}
+			}
+		}
+		.itemhead {
+			width: 100%;
+			margin: auto;
+			@include leader(7.5);
+			@include trailer(3);
+			h2 {
+				@include padding-leader(2);
+				@include padding-trailer(2.25);
+				@include lineh(2.5);
+				font-size: 24px;
+				&::after {
+					bottom: 10%;
+					height: 5px;
+					width: 42px;
+					margin-left: -21px;
+					background: $black;
+				}
+			}
+			h3 {
+				@include padding-leader(2);
+				@include padding-trailer(1.75);
+				@include lineh(2);
+				&::after {
+					bottom: 6%;
+					height: 4px;
+					width: 30px;
+					margin-left: -15px;
+				}
+			}
+			br {
+				display: block;
+			}
+		}
+		h5.lead {
+			@include trailer(1);
+			&::after {
+				bottom: 7px;
+				margin-left: 12px;
+			}
+		}
+		p.lead {
+			@include leader(0.75);
+		}
+		.detail, .overview, .point {
+			max-width: 420px;
+		}
+		.detail {
+			@include padding-leader(2);
+			@include padding-trailer(2);
+			p {
+				@include padding-trailer(1);
+			}
+			.button {
+				@include leader(3.5);
+			}
+		}
+		.overview {
+			@include trailer(4);
+			.detail {
+				@include padding-trailer(1);
+				p {
+					@include padding-leader(2);
+					@include padding-trailer(0);
+				}
+			}
+		}
+		.point {
+			@include padding-leader(6);
+			@include padding-trailer(2);
+			h1, h2 {
+				@include padding-leader(1);
+				@include padding-trailer(1);
+				@include lineh(3.5);
+			}
+			p {
+				@include padding-leader(1);
+				@include padding-trailer(0.5);
+			}
+		}
+	}
+

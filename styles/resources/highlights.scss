@@ -1,0 +1,73 @@
+
+
+// Text highlighting styles
+// ------------------------------------------------------------
+//
+	h1, h2, h3, h4, h5, h6, p {
+		&.block, .block {
+			display: inline-block;
+			position: relative;
+			@include padding-x(1.5%);
+			&::before {
+				content: '';
+				position: absolute;
+				@include onepos(0);
+				z-index: -1;
+				border-radius: 3px;
+				background: $secondary-ll;
+				@include trans(0.4s);
+				@include animatereset(0.6s, 2.5s);
+				@include atiming(ease-out);
+				@include lineinleft;
+			}
+		}
+		&.line, .line {
+			display: inline-block;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 15px;
+				left: -1.5%;
+				right: -1.5%;
+				z-index: -1;
+				height: 24px;
+				background: $primary-ll;
+				@include trans(0.4s);
+				@include animatereset(0.4s, 3s);
+				@include atiming(ease-out);
+				@include lineinleft;
+			}
+		}
+	}
+	header, section.feature {
+		h1, h2, h3, h4, h5, h6, p {
+			&.block, .block {
+				font-weight: 700;
+				text-shadow: 0px 2px 7px $black-1;
+				&::before {
+					@include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
+					box-shadow: 0px 3px 12px $black-1;
+				}
+			}
+			&.line, .line {
+				&::before {
+					@include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
+					box-shadow: 0px 3px 12px $black-1;	
+				}
+				&.secondary {
+					&::before {
+						@include gradient-hor(lighten($secondary-d, 5%), lighten($secondary-d, 25%))
+					}
+				}
+			}
+		}
+	}
+
+
+// Media queries
+// ------------------------------------------------------------
+//
+	@media screen and (max-width: 1200px) {
+		
+	}

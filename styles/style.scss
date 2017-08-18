@@ -1,0 +1,154 @@
+
+
+// Settings
+	@import "settings/reset";
+	@import "settings/mixins";
+	@import "settings/colors";
+	@import "settings/type";
+	@import "settings/ui";
+	@import "settings/animations";
+
+// Resources
+	@import "resources/transitions";
+	@import "resources/loader";
+	@import "resources/highlights";
+	@import "resources/frames";
+	@import "resources/visuals";
+	@import "resources/layouts";
+
+// Sections
+	@import "sections/nav";
+	@import "sections/header";
+	@import "sections/content";
+	@import "sections/feature";
+	@import "sections/footer";
+
+// Subpages
+	@import "sections/-projects";
+	@import "sections/subpage";
+
+
+// Base styles
+// ------------------------------------------------------------
+//
+	html {
+		height: 100%;
+		font-size: 100%;
+		background: $light;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialised;
+		-ms-font-smoothing: antialised;
+		-o-font-smoothing: antialised;
+		font-smoothing: antialiased;
+	}
+	body {
+		position: relative;
+		width: 100%;
+		min-width: 320px;
+		max-width: $max-width;
+		height: 100%;
+		margin: auto;
+		font-family: $sans;
+		font-size: $basefont;
+		line-height: $baseline;
+	}
+	section {
+		position: relative;
+		z-index: 2;
+		z-index: 2;
+		width: 100%;
+		min-width: 320px;
+		max-width: $max-width;
+		margin: auto;
+		@include padding-leader(12);
+		@include padding-trailer(15);
+		@include padding-x(3%);
+		text-align: center;
+		overflow: hidden;
+		color: $black;
+		background: $bodybg;
+	}
+	header, section.feature {
+		color: $bodybg;
+		background: $featurebg;
+		&.alt {
+			color: $featurebg;
+			background: $bodybg;
+		}
+	}
+	.base {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+		width: 100%;
+		min-width: 320px;
+		max-width: $max-width;
+		margin: auto;
+		box-shadow: 0px 0px 96px $black-1, -0px 0px 96px $black-1;
+		box-shadow: 0px 0px 96px $black-1, -0px 0px 96px $black-1;
+		background: $featurebg;
+		@include trans(0.5s);
+	}
+	nav ul, header, section, section .sub {
+		@include padding-x(5%);
+	}
+	body.home, body.sub {
+		section.content {
+			// @include padding-x(0%);
+			// overflow: visible;
+		}
+		section.feature {
+			min-height: 120%;
+		}
+	}
+
+
+// Media queries
+// ------------------------------------------------------------
+//
+	@media screen and (min-width: $max-width+1) {
+		nav ul, header, section, section.sub {
+			@include padding-x(6.5%);
+		}
+	}
+	@media screen and (max-width: 959px) {
+		section.bridge, section.content, section.feature, section.footer {
+			z-index: 9;
+		}
+		.base {
+			z-index: -9;
+		}
+	}
+
+
+// Temporary styles for front-end dev
+// ------------------------------------------------------------
+//
+	.disp-none {
+		display: none !important;
+	}
+	.timingcb1 {
+		@include ttimingcb(0.4, 0.7, 0.4, 0.9);
+		@include atimingcb(0.4, 0.7, 0.4, 0.9);
+	}
+	.timingcb2 {
+		@include ttimingcb(0.1, 0.7, 0.3, 1);
+		@include atimingcb(0.1, 0.7, 0.3, 1);
+	}
+	.timingcb3 {
+		@include ttimingcb(0.7, 0.3, 0.7, 0.3);
+		@include atimingcb(0.7, 0.3, 0.7, 0.3);
+	}
+	.gradtxt {
+		@include gradient-text(left bottom, right top, 0%, $orange-f, 100%, $purple-f);
+	}
+	.gradtxt-line {
+		@include gradient-text(left bottom, right top, 0%, $orange-f, 100%, $purple-f);
+	}
+	body.outlines {
+		li, a, span { @include inline; }
+		h1, h2, h3, h4, h5, h6 { @include inline; }
+		div, .wrap, section { @include inline; }
+		// * { @include inline; }
+	}

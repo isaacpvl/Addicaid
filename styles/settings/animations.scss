@@ -1,0 +1,260 @@
+
+
+// Animations
+// ------------------------------------------------------------
+//
+	@mixin fadein { animation-name: fadein; }
+	@keyframes fadein {
+		0% { opacity: 0; }
+		100% {  }
+	}
+	@mixin fadeinup { animation-name: fadeinup; }
+	@keyframes fadeinup {
+		0% { opacity: 0; @include tmove(0, 84px); }
+		100% {  }
+	}
+	@mixin fadeindown { animation-name: fadeindown; }
+	@keyframes fadeindown {
+		0% { opacity: 0; @include tmove(0, -48px); }
+		100% {  }
+	}
+	@mixin fadeinleft { animation-name: fadeinleft; }
+	@keyframes fadeinleft {
+		0% { opacity: 0; @include tmove(30px, 0); }
+		100% {  }
+	}
+	@mixin fadeinright { animation-name: fadeinright; }
+	@keyframes fadeinright {
+		0% { opacity: 0; @include tmove(-30px, 0); }
+		100% {  }
+	}
+	@mixin fadeout { animation-name: fadeout; }
+	@keyframes fadeout {
+		0% { opacity: 1; }
+		100% { opacity: 0; }
+	}
+	@mixin bouncein { animation-name: bouncein; }
+	@keyframes bouncein {
+		0% { opacity: 0; @include tscale(0.3); }
+		50% { opacity: 1; @include tscale(1.1); }
+		70% { @include tscale(0.9); }
+		100% { @include tscale(1); }
+	}
+
+// visual zoom
+	@mixin browserzoom { animation-name: browserzoom; }
+	@keyframes browserzoom {
+		0% { box-shadow: 0 -24px rgba($black, 0.08), 0 30px rgba($black, 0.08); }
+		50% { box-shadow: 0 -16px rgba($black, 0.18), 0 18px rgba($black, 0.18); }
+		100% { box-shadow: 0 -24px rgba($black, 0.08), 0 30px rgba($black, 0.08); }
+	}
+	@mixin shotzoom { animation-name: shotzoom; }
+	@keyframes shotzoom {
+		0% { box-shadow: 0 -24px rgba($black, 0.08), 0 30px rgba($black, 0.08), 0 0 0 1px $black-15; }
+		50% { box-shadow: 0 -16px rgba($black, 0.18), 0 18px rgba($black, 0.18), 0 0 0 1px $black-05; }
+		100% { box-shadow: 0 -24px rgba($black, 0.08), 0 30px rgba($black, 0.08), 0 0 0 1px $black-15; }
+	}
+
+// push reveal
+	@mixin reveal { animation-name: reveal; }
+	@keyframes reveal {
+		0% { height: 100%; }
+		100% { height: 100%; }
+	}
+	// @media screen and (max-height: 750px) {
+	// 	@keyframes reveal {
+	// 		0% { height: 100%; }
+	// 		100% { height: 100%; }
+	// 	}
+	// }
+	// @media screen and (max-width: 640px) {
+	// 	@keyframes reveal {
+	// 		0% { height: 100%; }
+	// 		100% { height: 100%; }
+	// 	}
+	// }
+
+// page transition slides
+	@mixin slideinright { animation-name: slideinright; }
+	@keyframes slideinright {
+		0% {
+			@include tmove(100%, 0);
+		}
+		100% {
+			@include tmove(0, 0);
+		}
+	}
+	@mixin slideinleft { animation-name: slideinleft; }
+	@keyframes slideinleft {
+		0% {
+			@include tmove(-100%, 0);
+		}
+		100% {
+			@include tmove(0, 0);
+		}
+	}
+	@mixin zoomout { animation-name: zoomout; }
+	@keyframes zoomout {
+		0% { @include tscale(1); }
+		100% { @include tscale(0.9); }
+	}
+
+// header slide
+	@mixin slideout { animation-name: slideout; }
+	@keyframes slideout {
+		0% { @include tmove(0, -100%); }
+		100% {  }
+	}
+	@mixin slidein { animation-name: slidein; }
+	@keyframes slidein {
+		0% {  }
+		100% { @include tmove(0, -100%); }
+	}
+
+// line in
+	@mixin lineinleft { animation-name: lineinleft; }
+	@keyframes lineinleft {
+		0% { width: 0%; }
+		100% { width: 100%; }
+	}
+	@mixin lineinright { animation-name: lineinright; }
+	@keyframes lineinright {
+		0% { width: 0%; }
+		100% { width: 100%; }
+	}
+
+// nav out
+	@mixin navout { animation-name: navout; }
+	@keyframes navout {
+		0% {  }
+		100% { @include tmove(0, -108px); }
+	}
+
+// arrow in
+	@mixin arrowin { animation-name: arrowin; }
+	@keyframes arrowin {
+		0% { @include tmove(0, -30px); }
+		100% {  }
+	}
+
+// newsflash
+	@mixin newsflash { animation-name: newsflash; }
+	@keyframes newsflash {
+		0% { opacity: 0; @include tfree(0, -800deg, 0, 0); }
+		20% { @include tfree(0.1, -640deg, 0, 0); }
+		100% { opacity: 1; @include tfree(1, 8deg, 0, 0); }
+	}
+
+// life background in
+	@mixin lifebgin { animation-name: lifebgin; }
+	@keyframes lifebgin {
+		0% { opacity: 0; top: -600px; height: 1680px;  }
+		100% { top: 360px; height: 600px; }
+	}
+
+// loader animations
+	@mixin loaderinleft { animation-name: loaderinleft; }
+	@keyframes loaderinleft {
+		0% {
+			opacity: 0;
+			@include tmove(-18px, 0);
+		}
+		100% {  }
+	}
+	@mixin loaderinright { animation-name: loaderinright; }
+	@keyframes loaderinright {
+		0% {
+			opacity: 0;
+			@include tmove(18px, 0);
+		}
+		100% {  }
+	}
+	@mixin loadinga { animation-name: loadinga; }
+	@keyframes loadinga {
+		0% { opacity: 0; @include tmovescale(0.1, -60px, 0); }
+		10% { opacity: 0; @include tmovescale(0.1, -60px, 0); }
+		11% { opacity: 1; }
+		20% { opacity: 1; @include tscale(1); }
+		85% { opacity: 1; @include tscale(1); }
+		100% { opacity: 0; @include tmovescale(0.1, 60px, 0); }
+	}
+	@mixin loadingb { animation-name: loadingb; }
+	@keyframes loadingb {
+		0% { opacity: 0; @include tmovescale(0.1, -60px, 0); }
+		32.5% { opacity: 0; @include tmovescale(0.1, -60px, 0); }
+		33.5% { opacity: 1; }
+		42.5% { opacity: 1; @include tscale(1); }
+		85% { opacity: 1; @include tscale(1); }
+		100% { opacity: 0; @include tmovescale(0.1, 100px, 0); }
+	}
+	@mixin loadingc { animation-name: loadingc; }
+	@keyframes loadingc {
+		0% { opacity: 0; @include tmovescale(0.1, -60px, 0); }
+		55% { opacity: 0; @include tmovescale(0.1, -60px, 0); }
+		56% { opacity: 1; }
+		65% { opacity: 1; @include tscale(1); }
+		85% { opacity: 1; @include tscale(1); }
+		100% { opacity: 0; @include tmovescale(0.1, 150px, 0); }
+	}
+
+
+// Newsflash styles
+// ------------------------------------------------------------
+//
+	.news {
+		display: none;
+		position: fixed;
+		z-index: -999;
+		@include onepos(0);
+		visibility: hidden;
+		text-align: center;
+		.paper {
+			position: relative;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			padding: 6% 0;
+			img {
+				width: auto;
+				height: 100%;
+				min-height: 480px;
+				max-height: 780px;
+				box-shadow: 0 0 $black-0;
+				@include torigin(50% 50%);
+				@include animate(0.8s);
+				@include atiming(ease-out);
+				@include newsflash;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				z-index: -1;
+				@include onepos(0);
+				background: $black-5;
+				@include animate(0.8s);
+				@include fadein;
+			}
+		}
+	}
+	.news.flash {
+		display: block;
+		z-index: 999;
+		visibility: visible;
+		cursor: pointer;
+		.paper {
+			img {
+				box-shadow: 12px 12px $black-25;
+			}
+			&::after {
+				background: $black-5;
+			}
+		}
+	}
+
+	// media queries
+		@media screen and (max-width: 640px) {
+			.news {
+				display: none;
+			}
+		}
+

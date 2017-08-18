@@ -1,0 +1,86 @@
+
+
+// UI styles
+// ------------------------------------------------------------
+//
+	a, a img {
+		text-decoration: underline;
+		cursor: pointer;
+		color: $secondary;
+		@include trans(0.3s);
+		&:hover {
+			color: $secondary-l;
+			@include trans(0.15s);
+		}
+		&:active {
+			color: $secondary-d;
+			@include trans(0.075s);
+		}
+		&.disabled {
+			cursor: default;
+		}
+	}
+	.button {
+		display: inline-block;
+		height: 72px;
+		@include padding-x(48px);
+		@include lineh(6);
+		@extend .caps;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+		color: $white;
+		border-radius: 2px;
+		background: $secondary;
+		@include gradient-hor(lighten($secondary, 0%), lighten($secondary, 20%))
+		@include noselect;
+		&:hover {
+			color: $white;
+		}
+		&:active, &.active {
+			color: $white;
+		}
+	}
+	.button.disabled {
+		cursor: default;
+		font-weight: 500;
+		opacity: 0.3;
+		&:hover, &:active, &.active {
+			color: $white;
+			background: $secondary;
+			// box-shadow: inset 0 0 0 1px $secondary, inset 0 0px $white, 0 0px $secondary;
+			@include tmove(0, 0);
+		}
+	}
+	.applink {
+		width: 165px;
+		height: 40px;
+		&.apple {
+			background: url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;
+		}
+		&.google {
+			background: url(https://upload.wikimedia.org/wikipedia/commons/c/cd/Get_it_on_Google_play.svg) no-repeat;
+		}
+	}
+
+
+// Media queries
+// ------------------------------------------------------------
+//
+	@media screen and (max-width: 640px) {
+		.button {
+			height: 54px;
+			@include padding-x(24px);
+			@include lineh(4.5);
+			font-size: 14px;
+			&:hover {
+				box-shadow: inset 0 0 0 1px $secondary, inset 0 54px $white, 0 3px $secondary;
+				@include tmove(0, -3px);
+			}
+			&:active, &.active {
+				box-shadow: inset 0 0 0 1px $secondary, inset 0 54px $white-8, 0 -3px $secondary;
+				@include tmove(0, 1px);
+			}
+		}
+	}
