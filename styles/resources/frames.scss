@@ -8,7 +8,7 @@
 		width: 100%;
 		border-radius: 4px 4px 2px 2px;
 		@include border(1px, $dark-l);
-		box-shadow: 0px 0px $dark-l, 0px 3px 15px 1px $black-25;
+		box-shadow: 0px 0px $dark-l;
 		background: $dark-l;
 		overflow: hidden;
 		@include trans(0.5s);
@@ -17,7 +17,7 @@
 			height: auto;
 			margin-bottom: -1px;
 			border-radius: 0 0 1px 1px;
-			opacity: 0 !important;
+			// opacity: 0 !important;
 			@include noselect;
 		}
 		.top {
@@ -477,7 +477,7 @@
 		padding: 0 10px;
 		border-radius: 15px;
 		@include border(1px, $dark-l);
-		box-shadow: 0px 0px $dark-l, 0px 3px 18px 3px $black-25;
+		box-shadow: 0px 0px $dark-l;
 		background: $white;
 		text-align: center;
 		@include trans(0.6s);
@@ -683,7 +683,8 @@
 			padding: 0 12px;
 			border-radius: 24px;
 			@include border(2px, $dark-l);
-			box-shadow: 0px 0px $dark-l, 0px 3px 18px 3px $black-15;
+			// box-shadow: 0px 0px $dark-l, 0px 3px 18px 3px $black-15;
+			box-shadow: 0px 0px $dark-l;
 			.top {
 				height: 78px;
 				.camera {
@@ -733,28 +734,34 @@
 			@include trans(0.6s);
 		}
 	}
+
 	.multiphone.perspective {
 		max-width: 782px;
+		margin-top: 3%;
+		margin-left: -3%;
 		.stacka {
 			margin-top: 0%;
 			left: 0;
 			@include trans(0.6s);
-			@include tfree3d(0.9, 0.9, 2.5, 25, 25, -180, 20deg, 0px, 48px, -24px);
-			box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-15;
+			@include tfree3d(0.9, 0.85, 2.5, 25, 25, -180, 20deg, 0px, 48px, -24px);
+			// box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-15;
+			box-shadow: -10px 11px $dark-l;
 		}
 		.stackb {
 			margin-top: -1.25%;
 			left: 32.5%;
 			@include trans(0.7s);
 			@include tfree3d(0.95, 0.9, 2, 15, 20, -90, 12.5deg, 0px, 0px, 0px);
-			box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-15;
+			// box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-15;
+			box-shadow: -10px 10px $dark-l;
 		}
 		.stackc {
 			margin-top: -2.5%;
 			right: 0;
 			@include trans(0.8s);
-			@include tfree3d(1, 0.9, 1.5, 7.5, 15, -45, 7.5deg, 0px, -12px, 24px);
-			box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-15;
+			@include tfree3d(1, 0.95, 1.5, 7.5, 15, -45, 7.5deg, 0px, -12px, 24px);
+			// box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-15;
+			box-shadow: -10px 6px $dark-l;
 		}
 	}
 
@@ -838,3 +845,204 @@
 				}
 			}
 		}
+
+
+
+// Multiplatform styles
+// ------------------------------------------------------------
+//
+	.multiplatform {
+		position: relative;
+		width: 100%;
+		max-width: 100%;
+		@include trans(0.8s);
+		@include perspective(420px);
+		.phone {
+			// width: 50%;
+			// min-width: 220px;
+			// max-width: 288px;
+			// padding: 0 12px;
+			// border-radius: 24px;
+			// @include border(2px, $dark-l);
+			// box-shadow: 0px 0px $dark-l, 0px 3px 18px 3px $black-15;
+			// box-shadow: 0px 0px $dark-l;
+			// .top {
+			// 	height: 78px;
+			// 	.camera {
+			// 		top: 25px;
+			// 		span {
+			// 			width: 9px;
+			// 			height: 9px;
+			// 			border-radius: 4.5px;
+			// 		}
+			// 	}
+			// 	.speaker {
+			// 		top: 47px;
+			// 		span {
+			// 			width: 40px;
+			// 			height: 5px;
+			// 			border-radius: 2.5px;
+			// 		}
+			// 	}
+			// }
+			// .bottom {
+			// 	height: 78px;
+			// 	div {
+			// 		top: 14px;
+			// 		span {
+			// 			width: 48px;
+			// 			height: 48px;
+			// 		}
+			// 	}
+			// }
+		}
+		// .stacka {
+		// 	margin-top: 0%;
+		// 	left: 0;
+		// 	z-index: 1;
+		// 	@include trans(0.8s);
+		// }
+		// .stackb {
+		// 	margin-top: 0%;
+		// 	left: 32.5%;
+		// 	z-index: 2;
+		// 	@include trans(0.7s);
+		// }
+		// .stackc {
+		// 	margin-top: 0%;
+		// 	right: 0;
+		// 	z-index: 3;
+		// 	@include trans(0.6s);
+		// }
+	}
+
+	.multiplatform.perspective {
+		max-width: 782px;
+		margin-top: 3%;
+		margin-left: 3%;
+		// .stacka {
+		// 	margin-top: 0%;
+		// 	left: 0;
+		// 	@include trans(0.6s);
+		// 	@include tfree3d(0.9, 0.85, 2.5, 25, 25, -180, 20deg, 0px, 48px, -24px);
+		// 	// box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-15;
+		// 	box-shadow: -10px 11px $dark-l;
+		// }
+		// .stackb {
+		// 	margin-top: -1.25%;
+		// 	left: 32.5%;
+		// 	@include trans(0.7s);
+		// 	@include tfree3d(0.95, 0.9, 2, 15, 20, -90, 12.5deg, 0px, 0px, 0px);
+		// 	// box-shadow: -8px 9px $dark-l, -10px 12px 24px 3px $black-15;
+		// 	box-shadow: -10px 10px $dark-l;
+		// }
+		.phone.left {
+			margin-top: -2.5%;
+			left: 0;
+			@include trans(0.8s);
+			@include tfree3d(1, 0.95, 1.5, -7.5, 15, -45, -3deg, 0px, 12px, 24px);
+			box-shadow: 10px 6px $dark-l;
+		}
+		.phone.right {
+			margin-top: -2.5%;
+			right: 0;
+			@include trans(0.8s);
+			@include tfree3d(1, 0.95, 1.5, 7.5, 15, -45, 7.5deg, 0px, -12px, 24px);
+			box-shadow: -10px 6px $dark-l;
+		}
+		// .browser {
+		// 	margin-top: -1.25%;
+		// 	@include trans(0.6s);
+		// 	@include tfree3d(0.95, 0.9, 2, -15, 20, -90, -12.5deg, 0px, 0px, 0px);
+		// 	box-shadow: 3px 2px $dark-l;
+		// }
+		.browser {
+			margin-top: -2.5%;
+			left: 0;
+			@include trans(0.8s);
+			@include tfree3d(0.9, 0.95, 2, -7.5, 45, -45, -7.5deg, 0px, -12px, 0px);
+			box-shadow: 3px 2px $dark-l;
+		}
+	}
+
+	// media queries
+		@media screen and (max-width: 640px) {
+			.multiplatform {
+				.phone {
+					width: 45%;
+					min-width: 0;
+					max-width: 252px;
+					padding: 0 6px;
+					border-radius: 14px;
+					.top {
+						height: 44px;
+						.camera {
+							top: 14px;
+							span {
+								width: 6px;
+								height: 6px;
+								border-radius: 3px;
+							}
+						}
+						.speaker {
+							top: 27px;
+							span {
+								width: 30px;
+								height: 3px;
+							}
+						}
+					}
+					.bottom {
+						height: 44px;
+						div {
+							top: 6px;
+							span {
+								width: 32px;
+								height: 32px;
+							}
+						}
+					}
+				}
+				.stackb {
+					left: 30%;
+				}
+			}
+		}
+		@media screen and (max-width: 420px) {
+			.multiplatform {
+				.phone {
+					width: 42%;
+					max-width: 228px;
+					padding: 0 4px;
+					.top {
+						height: 40px;
+						.camera {
+							top: 12px;
+							span {
+								width: 6px;
+								height: 6px;
+								border-radius: 3px;
+							}
+						}
+						.speaker {
+							top: 24px;
+							span {
+								width: 26px;
+								height: 3px;
+							}
+						}
+					}
+					.bottom {
+						height: 40px;
+						div {
+							top: 6px;
+							span {
+								width: 28px;
+								height: 28px;
+							}
+						}
+					}
+				}
+			}
+		}
+

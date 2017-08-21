@@ -155,6 +155,12 @@
 		$('.multiphone').toggleClass('perspective');
 	});
 
+// multiplatform transform toggle
+	$(body).on('mouseup', '#multiplatform', function(event) {
+		event.preventDefault();
+		$('.multiplatform').toggleClass('perspective');
+	});
+
 });
 
 
