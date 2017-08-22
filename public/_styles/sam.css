@@ -74,7 +74,7 @@ img.abso-s {
   box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2); }
 
 img.abso.r {
-  right: -50%;
+  right: -80%;
   left: initial;
   height: 350px;
   z-index: -2;
