@@ -317,21 +317,21 @@
 // ------------------------------------------------------------
 //
 	body.fold {
-		header {
-			.wrap {
-				opacity: 0.3;
-			}
-		}
-		section.bridge {
-			.bridge {
-				opacity: 1;
-				@include trans(0.8s);
-			}
-		}
+		// header {
+		// 	.wrap {
+		// 		opacity: 0.3;
+		// 	}
+		// }
+		// section.bridge {
+		// 	.bridge {
+		// 		opacity: 1;
+		// 		@include trans(0.8s);
+		// 	}
+		// }
 	}
 	body.home.fold {
 		.base {
-			background: $featurebg-d;
+			// background: $featurebg-d;
 			@include trans(0.25s);
 		}
 	}

@@ -34,7 +34,7 @@
 	html {
 		height: 100%;
 		font-size: 100%;
-		background: $light;
+		background: $bodybg;
 		-webkit-font-smoothing: antialiased;
 		-moz-font-smoothing: antialised;
 		-ms-font-smoothing: antialised;
@@ -55,21 +55,16 @@
 	section {
 		position: relative;
 		z-index: 2;
-		z-index: 2;
 		width: 100%;
 		min-width: 320px;
 		max-width: $max-width;
 		margin: auto;
 		@include padding-leader(12);
 		@include padding-trailer(15);
-		@include padding-x(3%);
 		text-align: center;
 		overflow: hidden;
 		color: $black;
 		background: $bodybg;
-	}
-	header, section.feature {
-		color: $bodybg;
 	}
 	.base {
 		position: fixed;
@@ -81,30 +76,22 @@
 		max-width: $max-width;
 		margin: auto;
 		box-shadow: 0px 0px 96px $black-1, -0px 0px 96px $black-1;
-		background: $featurebg;
+		// background: $featurebg;
 		@include trans(0.5s);
-		&::after {
-			// content: '';
-			display: block;
-			position: fixed;
-			z-index: 0;
-			width: 100%;
-			height: 100%;
-			background: $featurebg url(/_img/pattern.svg) no-repeat center top;
-			background-size: auto 100vh;
-			opacity: 0.12;
-		}
+		// &::after {
+		// 	// content: '';
+		// 	display: block;
+		// 	position: fixed;
+		// 	z-index: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	background: $featurebg url(/_img/pattern.svg) no-repeat center top;
+		// 	background-size: auto 100vh;
+		// 	opacity: 0.12;
+		// }
 	}
-	nav ul, header, section, section .sub {
+	nav ul, header, section, section.sub, section .cover {
 		@include padding-x(5%);
-	}
-	body.home, body.sub {
-		section.content {
-			
-		}
-		section.feature {
-			min-height: 120%;
-		}
 	}
 
 
@@ -112,7 +99,7 @@
 // ------------------------------------------------------------
 //
 	@media screen and (min-width: $max-width+1) {
-		nav ul, header, section, section.sub {
+		nav ul, header, section, section.sub, section .cover {
 			@include padding-x(6.5%);
 		}
 	}

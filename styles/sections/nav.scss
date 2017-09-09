@@ -11,8 +11,6 @@
 		max-width: $max-width;
 		height: 108px;
 		text-align: right;
-		fill: $white;
-		color: $white;
 		@include gradient-vert($black-0, $black-0);
 		@include noselect;
 		@include animate(0.4s);
@@ -26,7 +24,7 @@
 			left: 0;
 			right: 0;
 			width: 100%;
-			height: 0;
+			// height: 0;
 			background: rgba($bodybg, 0.925);
 			@include trans(0.4s);
 		}
@@ -63,27 +61,15 @@
 		}
 		li.active {
 			a {
-				fill: $white;
-				color: $white;
-				@include tmove(0, -3px);
 				&::after {
 					width: 108%;
-					@include tmove(0, 3px);
 					@include trans(0.4s);
-				}
-			}
-		}
-		li.disabled {
-			a {
-				fill: $white-5;
-				color: $white-5;
-				&:hover, &:active {
-					@include treset;
 				}
 			}
 		}
 		li.more {
 			margin-left: 48px;
+			margin-right: 12px;
 			a {
 				width: 42px;
 				&::after {
@@ -112,9 +98,7 @@
 				width: 100%;
 				height: 5px;
 				border-radius: 1.5px;
-				// box-shadow: 0px 2px 8px 2px $black-1;	
-				// @include gradient-hor(lighten($primary-ll, 5%), lighten($primary-ll, 20%))
-				background: $white;
+				background: $black-45;
 				@include trans(0.4s);
 			}
 			.menu {
@@ -135,8 +119,7 @@
 			@include padding-leader(5.75);
 			@extend .caps;
 			letter-spacing: 0.07em;
-			fill: $white;
-			color: $white;
+			color: $black-5;
 			text-decoration: none;
 			font-size: 18px;
 			&::after {
@@ -144,13 +127,11 @@
 				position: absolute;
 				z-index: -1;
 				bottom: 3px;
-				left: -2.5%;
+				left: -2%;
 				width: 0px;
 				height: 6px;
 				border-radius: 2px;
-				// box-shadow: 0px 2px 9px $black-1;
-				// @include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
-				background: $white;
+				background: $primary;
 				@include trans(0.4s);
 			}
 			span:first-of-type {
@@ -158,19 +139,14 @@
 				@include lineh(5);
 			}
 			&:hover {
-				fill: $white;
-				color: $white;
-				@include tmove(0, -3px);
+				color: $primary;
 				&::after {
-					width: 108%;
-					@include tmove(0, 3px);
-					@include trans(0.4s);
+					width: 104%;
+					@include trans(0.25s);
 				}
 			}
 			&:active {
-				fill: $white;
-				color: $white;
-				@include treset;
+				color: $primary;
 			}
 			@include trans(0.4s);
 		}
@@ -194,13 +170,10 @@
 			a {
 				width: 100%;
 				@include padding-leader(4.5);
-				fill: $white;
-				color: $white;
+				fill: $primary;
+				color: $primary;
 				text-transform: none;
 				font-weight: 200;
-				b {
-					font-weight: 700;
-				}
 				&::after {
 					content: '';
 					position: absolute;
@@ -210,16 +183,15 @@
 					width: 102%;
 					height: 18px;
 					border-radius: 2px;
-					// box-shadow: 0px 3px 15px $black-08;	
-					// @include gradient-hor(lighten($primary, 0%), lighten($primary, 20%))
-					background: $primary-d;
+					// background: rgba($primary, 0.3);
+					background: $white;
+					// box-shadow: 3px 4px 0px 1px $black-25;
 					@include animatereset(0.35s, 1.2s);
 					@include lineinleft;
 				}
 				&:hover {
 					&::after {
 						width: 138%;
-						@include tmove(0, 0px);
 					}
 				}
 			}
@@ -251,7 +223,6 @@
 				a {
 					&::after {
 						width: 140%;
-						@include tmove(0, 0px);
 					}
 				}
 				h5 {
@@ -271,7 +242,7 @@
 		@include gradient-vert($black-15, $black-0);
 		&::before {
 			height: 60px;
-			background: $white-9;
+			background: $white-95;
 		}
 		a {
 			height: 60px;
@@ -314,8 +285,6 @@
 					bottom: -12px;
 					width: 110%;
 					height: 18px;
-					// box-shadow: 0px 2px 9px 1px $black-1;
-					// @include gradient-hor($light, $white);
 					background: $white;
 				}
 				&:hover, &.hover {
@@ -414,8 +383,6 @@
 					bottom: -12px;
 					width: 110%;
 					height: 18px;
-					// box-shadow: 0px 2px 9px 1px $black-1;
-					// @include gradient-hor(lighten($primary-ll, 0%), lighten($primary-ll, 10%))
 					box-shadow: none;
 					background: $primary-d;
 				}
@@ -621,12 +588,6 @@
 				&.hover {
 				}
 			}
-		}
-		.arrowbar {
-			height: 0;
-		}
-		.arrow, .arrowb, .arrowc {
-			@include tmove(0, -27px);
 		}
 	}
 	@media screen and (max-width: 420px) {

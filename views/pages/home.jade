@@ -2,20 +2,25 @@
 block header
 	header.hide
 		.wrap.hide
-			.tagline#tagline(data-speed="3")
+			.tagline#tagline(data-speed="1.25")
 				span
 					h1 A behavior change company
-					h1 that <span class="block">combats addiction</span> with
-					h1 <span class="line">A.I.-enhanced</span> solutions.
+					h1 that combats addiction with
+					h1 A.I.-enhanced solutions.
 	.push#push
 
-block content
-	section.content#content
-		.cwrap.cright
+block bridge
+	section.bridge#bridge
+		.cwrap
 			.point
 				h5.lead Addiction is <b>everyone&rsquo;s problem</b>
 				h2 We&rsquo;re taking on the <span class="line">#1 cause</span> of <span class="block">accidental death</span> in the U.S.
 				p.small Though we want to reeducate the entire world on the concept of addiction while we&rsquo;re at it. Addiction is a learning disability, resorting to the same actions over and over even though they actively work against one best interest. Based on specific needs, thought patterns, and activity, Addicaid assists you in cultivating a personalized recovery strategy, clearing the path to identify, iterate, and achieve long-term goals.
+		.cover#cover(data-speed="-2.5")
+			img(src="/_img/covers/machine.jpg")
+
+block content
+	section.content#content
 		include ../modules/solutions
 		include ../modules/people
 		include ../modules/providers
@@ -26,8 +31,33 @@ block content
 block feature
 	section.feature#feature
 		.head
-			h5 Press & Prestige
-		.pressquotes
+			h5 Supported by
+		ul.cred
+			li
+				a(href="", target="_blank")
+					img(src="/_img/isaacpvl/rec-netawards.png")
+			li
+				a(href="", target="_blank")
+					img(src="/_img/isaacpvl/rec-awwwards.png")
+			li
+				a(href="", target="_blank")
+					img(src="/_img/isaacpvl/rec-ptreview.png")
+			li
+				a(href="", target="_blank")
+					img(src="/_img/isaacpvl/rec-abduzeedo.png")
+			br
+			li
+				a(href="", target="_blank")
+					img(src="/_img/isaacpvl/rec-typekit.png")
+			li
+				a(href="", target="_blank")
+					img(src="/_img/isaacpvl/rec-csswinner.png")
+			li
+				a(href="", target="_blank")
+					img(src="/_img/isaacpvl/rec-fupnorth.png")
+			li
+				a(href="", target="_blank")
+					img(src="/_img/isaacpvl/rec-dbugle.png")
 		.head.alt
 			h5 Featured in
 		ul.cred

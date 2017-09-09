@@ -14,11 +14,11 @@
 		var content = $('#content');
 		var feature = $('#feature');
 		var title =$('#title');
+		var tagline = $('#tagline');
+		var bridge = $('#bridge');
 		var visualtop =$('.fout');
 		var visualbot =$('.fin');
 		var navToggle = true;
-		// var loadDelay = 0;
-		// var introStart = 0;
 		var loadDelay = 1200;
 		var introStart = 1000;
 

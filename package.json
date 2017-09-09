@@ -28,7 +28,7 @@
     "gulp-uglify": "^1.5.3",
     "jshint-stylish": "^1.0.0"
   },
-  "description": "Addicaid 2K17",
+  "description": "Addicaid",
   "main": "app.js",
   "repository": {
     "type": "git",
