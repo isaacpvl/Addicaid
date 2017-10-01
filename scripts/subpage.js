@@ -14,13 +14,11 @@
 		var content = $('#content');
 		var feature = $('#feature');
 		var title =$('#title');
-		var tagline = $('#tagline');
-		var bridge = $('#bridge');
 		var visualtop =$('.fout');
 		var visualbot =$('.fin');
 		var navToggle = true;
-		var loadDelay = 1200;
-		var introStart = 1000;
+		var loadDelay = 0;
+		var introStart = 0;
 
 	// jQuery(function() {
 	// 	var body = $('body');
@@ -54,10 +52,10 @@
 			setTimeout(function() {
 				$('section').removeClass('bgfade');
 				$('.base').removeClass('hide');
-			}, 600);
+			}, 100);
 			setTimeout(function() {
 				nava.addClass('full');
-			}, 1800);
+			}, 100);
 
 		// waypoints
 			setTimeout(function() {
@@ -96,9 +94,9 @@
 						});
 					}
 				}
-			}, 500);
+			}, 200);
 
-		}, 1000+introStart);
+		}, 100+introStart);
 	});
 
 // lock iOS scroll
@@ -120,7 +118,7 @@
 	};
 	setTimeout(function() {
 		smoothScroll.animateScroll(null, '#sub', callbackScroll);
-	}, 400);
+	}, 100);
 
 // header parallax scroll
 	// if (!navigator.userAgent.match(/(iPhone|iPod|iPad)/i)){

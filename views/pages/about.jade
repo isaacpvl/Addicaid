@@ -1,88 +1,148 @@
-
 block header
-	header.hide
-		.wrap.hide
-			.tagline#tagline(data-speed="1.25")
-				span
-					h1 A behavior change company
-					h1 that combats addiction with
-					h1 A.I.-enhanced solutions.
-	.push#push
+    header.about
+        .wrap
+            .logo
+                span#logo(data-speed="5.55")
+                    img(src="/_img/projects/logo.jpg")
+            .titled
+                span#title(data-speed="2.85")
+                    h2.left We specialize in teamwork, toxicity, &amp; serving communities. 
 
-block bridge
-	section.bridge#bridge
-		.cwrap
-			.point
-				h5.lead Addiction is <b>everyone&rsquo;s problem</b>
-				h2 We&rsquo;re taking on the <span class="line">#1 cause</span> of <span class="block">accidental death</span> in the U.S.
-				p.small Though we want to reeducate the entire world on the concept of addiction while we&rsquo;re at it. Addiction is a learning disability, resorting to the same actions over and over even though they actively work against one best interest. Based on specific needs, thought patterns, and activity, Addicaid assists you in cultivating a personalized recovery strategy, clearing the path to identify, iterate, and achieve long-term goals.
-		.cover#cover(data-speed="-2.5")
-			img(src="/_img/covers/machine.jpg")
+                    //- We're creating technology-enabled services that give good Samaritans the ability to support those who struggle most in society. Pavlov's dog allowed
+        .fade
+        .slide
+    .push#push
 
-block content
-	section.content#content
-		include ../modules/solutions
-		include ../modules/people
-		include ../modules/providers
-		.head
-			h5 Also check out...
-		include ../modules/approach
+//- block content
+//-     section.content#content
+//-         .cwrap.cleft.point.pb0.w100
+//-             h5.lead Engage anyone who thinks addiction where they are
+//-             h2 Orienting and educating <span class="line">communities</span> on risks and relevant sources
+//-             p.normal This full-service student life resource will support, educate, and improve their college experience socially, academically, and personally. It’s accessible, around-the-clock support that’s judgement-free and caters to <b>students, staff &amp;faculty.</b>
 
+//-         .overview.pt0
+//-         .detail.two-col
+//-         p.normal Identity is a powerful thing. A distinct, authentic personality that flows out of even the tiniest details of a product is what brings it to life and makes people believe in it. A &ldquo;clean, usable interface&rdquo; is only the bare minimum of what a designer can do.
+//-         p.normal A designer who creates a truly unique identity and applies it practically across a vast digital platform needs creative firepower, seasoned design ability, and eagerness to get their hands dirty in development. I&rsquo;ve worked relentlessly to become that designer.
+//-         p.lead But there&rsquo;s a couple important things to understand...
+//-             img(src="/_img/happy.jpg" class="img-r" )
 block feature
-	section.feature#feature
-		.head
-			h5 Supported by
-		ul.cred
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-netawards.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-awwwards.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-ptreview.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-abduzeedo.png")
-			br
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-typekit.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-csswinner.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-fupnorth.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-dbugle.png")
-		.head.alt
-			h5 Featured in
-		ul.cred
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-netawards.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-awwwards.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-ptreview.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-abduzeedo.png")
-			br
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-typekit.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-csswinner.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-fupnorth.png")
-			li
-				a(href="", target="_blank")
-					img(src="/_img/isaacpvl/rec-dbugle.png")
+    section.feature.white#feature
+        .head.alt.mt30
+            h5.pb20 We're addicts, experts &amp; empathizers, happiest when serving humans.
+        ul.cred.team
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/0.jpg);background-repeat: no-repeat;background-position: 50%;")
+                div.person
+                    h6.title founder | ceo
+                    h3.header.mb2 Sam Frons
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://samfrons.com", target="_blank" class="c-grey") samfrons.com 
+                    span.linelight &nbsp; | &nbsp;
+                    a.folink(href="https://linkedin.com/in/samfrons", target="_blank" class="c-grey") linkedin
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/1.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title co-founder | cto
+                    h3.header.mb2 Amine Ben Romdhane
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/aminebenromdhane/", target="_blank" class="c-grey")  linkedin
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/2.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title clinical advisor
+                    h3.header.mb2 Audrey Klein, PhD., MBA
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/audrey-klein-ph-d-mba-7b981117", target="_blank" class="c-grey")  linkedin
+
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/3.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title coo
+                    h3.header.mb2 Nick Ringold
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/nickringold/", target="_blank" class="c-grey")  linkedin
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/4.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title clinical product design
+                    h3.header.mb2 Brie Wildau, LCSW.
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/briewildau/", target="_blank" class="c-grey")  linkedin
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/8.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title social sciences &amp; strategy
+                    h3.header.mb2 Lauren Wagner, Msc.
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/laurenbwagner", target="_blank" class="c-grey")  linkedin
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/6.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title data visualization 
+                    h3.header.mb2 Diana Freed, LCSW
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/dianafreed/", target="_blank" class="c-grey")  linkedin
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/10.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title general counsel 
+                    h3.header.mb2 Mike Zhu, JD.
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/michael-zhu-12938732", target="_blank" class="c-grey")  linkedin
+
+            li
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/7.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title project management
+                    h3.header.mb2 Alex Thinath
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/alex-thinath/", target="_blank" class="c-grey") linkedin
+            li.latest
+                a.person-link
+                    div.hexagon.hexagon1
+                        div.hexagon-in1
+                            div.hexagon-in2(style="background: url(/_img/team/9.jpg);background-repeat: no-repeat;" +
+                            "background-position: 50%;")
+                div.person
+                    h6.title research &amp; development
+                    h3.header.mb2 Jai Kumar
+                    //- p.bOdy general specialist in design technology, systems science
+                    a.folink(href="https://linkedin.com/in/jai-kumar-3a397a38/", target="_blank" class="c-grey") linkedin
+
+        a(href="mailto:info@addicaid.com", target="_blank" class="btn centerma mt20 inline") contact us

@@ -5,21 +5,20 @@
 //
 	// primary
 		$primary						: #20c9cf;
-		$primary-l						: #80fbff;
-		$primary-ll						: #80fbff;
-		// $primary-l						: #47d5f7;
-		// $primary-ll						: #85e7ff;
-		$primary-d						: #12b2b8;
-		$primary-dd						: #3282c5;
+		$primary-l						: #20c9cf;
+		$primary-ll						: #d7dc4c;
+		$primary-d						: #e06100;
+		$primary-dd						: #a14600;
+		$primary-f						: #bf6725;
 		$primary-n						: rgba($primary, 0);
 
 	// secondary
-		$secondary						: #ffe335;
-		$secondary-l					: #ffe335;
-		$secondary-ll					: #ffe335;
-		$secondary-d					: #ffe335;
+		$secondary						: #20c9cf;
+		$secondary-l					: #47d5f7;
+		$secondary-ll					: #5beaef;
+		$secondary-d					: #12b2b8;
+		$secondary-dd					: #3282c5;
 		$secondary-n					: rgba($secondary, 0);
-		// $secondary						: #d7dc4c;
 
 	// tertiary
 		$brick							: #f6524d;
@@ -30,8 +29,6 @@
 
 		$teal							: #62c4a7;
 		$teal-n							: rgba($teal, 0);
-
-		$navy							: #002e5b;
 
 
 // Alternative colors
@@ -93,12 +90,12 @@
 		$light-n						: rgba($light, 0);
 
 		$dark							: #666;
-		$dark-l							: #aeaeae;
+		$dark-l							: #999;
 		$dark-d							: #333;
 		$dark-n							: rgba($dark, 0);
 
 	// black & white
-		$black							: #000;
+		$black							: #555;
 		$white							: #fff;
 
 		$black-95						: rgba($black, 0.95);
@@ -159,6 +156,5 @@
 		$featurebg						: $primary;
 		$featurebg-l					: $primary-l;
 		$featurebg-d					: $primary-d;
-		$featurebg-f					: $primary-dd;
+		$featurebg-f					: $primary-f;
 		$featurebg-n					: rgba($featurebg, 0);
-

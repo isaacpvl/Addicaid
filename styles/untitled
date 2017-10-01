@@ -1,0 +1,310 @@
+Searching 8511 files for ".fold"
+
+/Users/sam/Desktop/Addicaid-site/node_modules/accepts/node_modules/mime-db/db.json:
+ 2334:   "application/vnd.imagemeter.folder+zip": {
+
+/Users/sam/Desktop/Addicaid-site/node_modules/async/lib/async.js:
+  260:     async.foldl = async.reduce;
+  269:     async.foldr = async.reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/form-data/node_modules/mime-db/db.json:
+ 2334:   "application/vnd.imagemeter.folder+zip": {
+
+/Users/sam/Desktop/Addicaid-site/node_modules/gulp-jshint/node_modules/lodash/index.js:
+ 12067:     lodash.foldl = reduce;
+ 12068:     lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/gulp/CHANGELOG.md:
+  229: - Rename .files() to .src() and .folder() to .dest()
+
+/Users/sam/Desktop/Addicaid-site/node_modules/jshint/dist/jshint-rhino.js:
+ 13365:     lodash.foldl = reduce;
+ 13366:     lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/jshint/dist/jshint.js:
+ 13363:     lodash.foldl = reduce;
+ 13364:     lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/jshint/node_modules/lodash/index.js:
+ 11877:     lodash.foldl = reduce;
+ 11878:     lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/lodash/dist/lodash.compat.js:
+ 5024:   lodash.foldl = reduce;
+ 5025:   lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/lodash/dist/lodash.compat.min.js:
+   39: try{var s=Function(o,"return "+p).apply(t,f)}catch(v){throw v.source=p,v}return e?s(e):(s.source=p,s)},r.unescape=function(n){return n==W?"":(n+"").replace(lt,g)},r.uniqueId=function(n){var t=++it;return(n==W?"":n+"")+t},r.all=I,r.any=B,r.detect=R,r.foldl=D,r.foldr=T,r.include=k,r.inject=D,pr(r,function(n,t){r.prototype[t]||(r.prototype[t]=function(){var t=[this.__wrapped__];return Et.apply(t,arguments),n.apply(r,t)})}),r.first=M,r.last=function(n,t,r){if(n){var e=0,u=n.length;if(typeof t!="number"&&t!=W){var o=u;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/lodash/dist/lodash.js:
+ 4874:   lodash.foldl = reduce;
+ 4875:   lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/lodash/dist/lodash.min.js:
+   39: E(/x/)&&(E=function(n){return n instanceof Function||At.call(n)==Dt});var le=xt?function(n){if(!n||"object"!=typeof n)return!1;var r=n.valueOf,t="function"==typeof r&&(t=xt(r))&&xt(t);return t?n==t||xt(n)==t&&!v(n):y(n)}:y,ce=W,se=U;Mt&&Yr&&"function"==typeof setImmediate&&(Rr=kr(setImmediate,n)),t.after=Ar,t.assign=ie,t.at=C,t.bind=kr,t.bindAll=Or,t.bindKey=Ir,t.compact=ir,t.compose=Er,t.countBy=M,t.debounce=Sr,t.defaults=fe,t.defer=Rr,t.delay=Lr,t.difference=fr,t.filter=U,t.flatten=cr,t.forEach=G,t.forIn=re,t.forOwn=te,t.functions=b,t.groupBy=J,t.initial=pr,t.intersection=gr,t.invert=x,t.invoke=Q,t.keys=ue,t.map=W,t.max=X,t.memoize=Tr,t.merge=P,t.min=Y,t.object=hr,t.omit=D,t.once=Fr,t.pairs=q,t.partial=Nr,t.partialRight=$r,t.pick=B,t.pluck=ce,t.range=dr,t.reject=rr,t.rest=mr,t.shuffle=tr,t.sortBy=ar,t.tap=Jr,t.throttle=Pr,t.times=Ur,t.toArray=or,t.union=_r,t.uniq=xr,t.values=H,t.where=se,t.without=wr,t.wrap=Dr,t.zip=jr,t.collect=W,t.drop=mr,t.each=G,t.extend=ie,t.methods=b,t.select=U,t.tail=mr,t.unique=xr,Hr(t),t.clone=d,t.cloneDeep=m,t.contains=K,t.escape=qr,t.every=z,t.find=V,t.has=_,t.identity=Br,t.indexOf=sr,t.isArguments=v,t.isArray=ee,t.isBoolean=w,t.isDate=j,t.isElement=A,t.isEmpty=k,t.isEqual=O,t.isFinite=I,t.isFunction=E,t.isNaN=L,t.isNull=R,t.isNumber=T,t.isObject=S,t.isPlainObject=le,t.isRegExp=F,t.isString=N,t.isUndefined=$,t.lastIndexOf=yr,t.mixin=Hr,t.noConflict=Cr,t.random=Kr,t.reduce=Z,t.reduceRight=nr,t.result=Mr,t.size=er,t.some=ur,t.sortedIndex=br,t.template=zr,t.unescape=Vr,t.uniqueId=Gr,t.all=z,t.any=ur,t.detect=V,t.foldl=Z,t.foldr=nr,t.include=K,t.inject=Z,te(t,function(n,r){t.prototype[r]||(t.prototype[r]=function(){var r=[this.__wrapped__];
+
+/Users/sam/Desktop/Addicaid-site/node_modules/lodash/dist/lodash.underscore.js:
+ 4225:   lodash.foldl = reduce;
+ 4226:   lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/lodash/dist/lodash.underscore.min.js:
+   32: try{var a=Function("_","return "+o)(u)}catch(c){throw c.source=o,c}return t?a(t):(a.source=o,a)},u.unescape=function(n){return n==K?"":(n+"").replace(et,s)},u.uniqueId=function(n){var t=++nt+"";return n?n+t:t},u.all=S,u.any=B,u.detect=k,u.foldl=q,u.foldr=I,u.include=O,u.inject=q,u.first=M,u.last=function(n,t,r){if(n){var e=0,u=n.length;if(typeof t!="number"&&t!=K){var o=u;for(t=a(t,r);o--&&t(n[o],o,n);)e++}else if(e=t,e==K||r)return n[u-1];return p(n,dt(0,u-e))}},u.take=M,u.head=M,u.chain=function(n){return n=new u(n),n.__chain__=J,n
+
+/Users/sam/Desktop/Addicaid-site/node_modules/node-sass/test/spec.js:
+   27:   testCase.folder = folder;
+  113:   var suiteFolderLength = suite.folder.split('/').length;
+  114:   var optionsFile = join(suite.folder, 'options.yml');
+  143:               folder: suite.folder + '/' + prevSuite,
+  159:           folder: suite.folder + '/' + suiteName,
+
+/Users/sam/Desktop/Addicaid-site/node_modules/rcloader/node_modules/lodash/dist/lodash.compat.js:
+ 7013:     lodash.foldl = reduce;
+ 7014:     lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/rcloader/node_modules/lodash/dist/lodash.compat.min.js:
+    <binary>
+
+/Users/sam/Desktop/Addicaid-site/node_modules/rcloader/node_modules/lodash/dist/lodash.js:
+ 6663:     lodash.foldl = reduce;
+ 6664:     lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/rcloader/node_modules/lodash/dist/lodash.min.js:
+    <binary>
+
+/Users/sam/Desktop/Addicaid-site/node_modules/rcloader/node_modules/lodash/dist/lodash.underscore.js:
+ 4884:   lodash.foldl = reduce;
+ 4885:   lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/rcloader/node_modules/lodash/dist/lodash.underscore.min.js:
+   37: }),a+="';",i||(i="obj",a="with("+i+"||{}){"+a+"}"),a="function("+i+"){var __t,__p='',__j=Array.prototype.join;function print(){__p+=__j.call(arguments,'')}"+a+"return __p}";try{var l=Function("_","return "+a)(o)}catch(c){throw c.source=a,c}return r?l(r):(l.source=a,l)},u.unescape=function(n){return null==n?"":(n+"").replace(Hr,d)},u.uniqueId=function(n){var r=++tr+"";return n?n+r:r},u.all=B,u.any=P,u.detect=q,u.findWhere=function(n,r){return U(n,r,true)},u.foldl=W,u.foldr=z,u.include=k,u.inject=W,u.first=V,u.last=function(n,r,t){var u=0,o=n?n.length:0;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/rcloader/node_modules/lodash/lodash.js:
+ 7030:     lodash.foldl = reduce;
+ 7031:     lodash.foldr = reduceRight;
+
+/Users/sam/Desktop/Addicaid-site/node_modules/request/node_modules/mime-db/db.json:
+ 2334:   "application/vnd.imagemeter.folder+zip": {
+
+/Users/sam/Desktop/Addicaid-site/public/_img/bks/Addicaid Solutions_files/style.css:
+  713: body.out:not(.fold) .twrap, body.out.return:not(.fold) .twrap {
+  717: body.out:not(.fold) .underlay, body.out.return:not(.fold) .underlay {
+  724: body.out:not(.fold) .feature, body.out:not(.fold) .footer, body.out:not(.fold) .sub:not(':first-of-type'), body.out:not(.fold) .visual, body.out:not(.fold) .next, body.out.return:not(.fold) .feature, body.out.return:not(.fold) .footer, body.out.return:not(.fold) .sub:not(':first-of-type'), body.out.return:not(.fold) .visual, body.out.return:not(.fold) .next {
+  727: body.out:not(.fold).home header, body.out.return:not(.fold).home header {
+  732: body.fold.out.next.home header .wrap, body.fold.out.next.home .head, body.fold.out.next.home .sub {
+  738: body.fold.out.next.sub .wrap, body.fold.out.next.sub .head, body.fold.out.next.sub .itemhead, body.fold.out.next.sub .sub, body.fold.out.next.sub .overview, body.fold.out.next.sub .visual, body.fold.out.next.sub .point, body.fold.out.next.sub .detail, body.fold.out.next.sub .footlink, body.fold.out.next.sub .next {
+  744: body.fold.out.next.sub .overview .detail {
+  748:   body.fold.out.next.sub section.next, body.fold.out.prev.sub section.next, body.fold.out.return.sub section.next {
+  752:   body.fold.out.next.home header .wrap, body.fold.out.next.home .head, body.fold.out.next.home .sub {
+  754:   body.fold.out.next.sub .wrap, body.fold.out.next.sub .head, body.fold.out.next.sub .itemhead, body.fold.out.next.sub .sub, body.fold.out.next.sub .overview, body.fold.out.next.sub .visual, body.fold.out.next.sub .point, body.fold.out.next.sub .detail, body.fold.out.next.sub .footlink, body.fold.out.next.sub .next {
+  757: body.fold.out.prev.sub section.content, body.fold.out.return.sub section.content {
+  760: body.fold.out.prev.sub .wrap, body.fold.out.prev.sub .head, body.fold.out.prev.sub .itemhead, body.fold.out.prev.sub .sub, body.fold.out.prev.sub .overview, body.fold.out.prev.sub .visual, body.fold.out.prev.sub .point, body.fold.out.prev.sub .detail, body.fold.out.prev.sub .footlink, body.fold.out.prev.sub .next, body.fold.out.return.sub .wrap, body.fold.out.return.sub .head, body.fold.out.return.sub .itemhead, body.fold.out.return.sub .sub, body.fold.out.return.sub .overview, body.fold.out.return.sub .visual, body.fold.out.return.sub .point, body.fold.out.return.sub .detail, body.fold.out.return.sub .footlink, body.fold.out.return.sub .next {
+  766: body.fold.out.prev.sub .overview .detail, body.fold.out.return.sub .overview .detail {
+  770:   body.fold.out.prev.sub .wrap, body.fold.out.prev.sub .head, body.fold.out.prev.sub .itemhead, body.fold.out.prev.sub .sub, body.fold.out.prev.sub .overview, body.fold.out.prev.sub .visual, body.fold.out.prev.sub .point, body.fold.out.prev.sub .detail, body.fold.out.prev.sub .footlink, body.fold.out.prev.sub .next, body.fold.out.return.sub .wrap, body.fold.out.return.sub .head, body.fold.out.return.sub .itemhead, body.fold.out.return.sub .sub, body.fold.out.return.sub .overview, body.fold.out.return.sub .visual, body.fold.out.return.sub .point, body.fold.out.return.sub .detail, body.fold.out.return.sub .footlink, body.fold.out.return.sub .next {
+  774:   body.fold.out.next .preview.pleft .multibrowser.cycle .browser {
+  778:     body.fold.out.next .preview.pleft .multibrowser.cycle .browser img {
+  782:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stacka {
+  784:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stacka img {
+  788:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackb {
+  790:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackc {
+  792:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackd {
+  795:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackd img {
+  797:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepb .stackd {
+  799:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepb .stackd img {
+  801:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stacka {
+  804:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stacka img {
+  806:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackb {
+  808:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackb img {
+  812:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackc {
+  814:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackd {
+  816:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepc .stacka {
+  818:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepc .stacka img {
+  820:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stacka {
+  822:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackb {
+  825:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackb img {
+  827:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackc {
+  829:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackc img {
+  833:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackd {
+  835:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepd .stackb {
+  837:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepd .stackb img {
+  839:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stacka {
+  841:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackb {
+  843:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackc {
+  846:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackc img {
+  848:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackd {
+  850:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackd img {
+  854:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepa .stackc {
+  856:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepa .stackc img {
+  859: body.fold header .wrap {
+  862: body.fold section.bridge .bridge {
+  867: body.home.fold .base {
+  872: body.foldb .base, body.sub.foldb .base, body.home.foldb .base {
+  877: body.foldb header, body.sub.foldb header, body.home.foldb header {
+  881:   body.foldb header .splash, body.foldb header .fade, body.sub.foldb header .splash, body.sub.foldb header .fade, body.home.foldb header .splash, body.home.foldb header .fade {
+  884: body.foldb section.bridge .bridge, body.sub.foldb section.bridge .bridge, body.home.foldb section.bridge .bridge {
+  887:   body.foldb section.bridge .bridge .fade, body.sub.foldb section.bridge .bridge .fade, body.home.foldb section.bridge .bridge .fade {
+ 3069:   body.fold .tagline > span {
+ 3072:     body.fold .tagline > span h1:nth-of-type(1) {
+ 3074:     body.fold .tagline > span h1:nth-of-type(2) {
+ 3076:     body.fold .tagline > span h1:nth-of-type(3) {
+ 3084:   body.fold header .wrap {
+ 3776: body.lifeis.fold .lifebg {
+ 3778:   body.lifeis.fold .lifebg img {
+
+/Users/sam/Desktop/Addicaid-site/public/_styles/sam.css:
+  223: body.home.fold .base, .base {
+
+/Users/sam/Desktop/Addicaid-site/public/_styles/style.css:
+  600: body.out:not(.fold) .twrap, body.out.return:not(.fold) .twrap {
+  604: body.out:not(.fold) .underlay, body.out.return:not(.fold) .underlay {
+  611: body.out:not(.fold) .feature, body.out:not(.fold) .footer, body.out:not(.fold) .sub:not(':first-of-type'), body.out:not(.fold) .visual, body.out:not(.fold) .next, body.out.return:not(.fold) .feature, body.out.return:not(.fold) .footer, body.out.return:not(.fold) .sub:not(':first-of-type'), body.out.return:not(.fold) .visual, body.out.return:not(.fold) .next {
+  614: body.out:not(.fold).home header, body.out.return:not(.fold).home header {
+  619: body.fold.out.next.home header .wrap, body.fold.out.next.home .head, body.fold.out.next.home .sub {
+  625: body.fold.out.next.sub .wrap, body.fold.out.next.sub .head, body.fold.out.next.sub .itemhead, body.fold.out.next.sub .sub, body.fold.out.next.sub .overview, body.fold.out.next.sub .visual, body.fold.out.next.sub .point, body.fold.out.next.sub .detail, body.fold.out.next.sub .footlink, body.fold.out.next.sub .next {
+  631: body.fold.out.next.sub .overview .detail {
+  635:   body.fold.out.next.sub section.next, body.fold.out.prev.sub section.next, body.fold.out.return.sub section.next {
+  639:   body.fold.out.next.home header .wrap, body.fold.out.next.home .head, body.fold.out.next.home .sub {
+  641:   body.fold.out.next.sub .wrap, body.fold.out.next.sub .head, body.fold.out.next.sub .itemhead, body.fold.out.next.sub .sub, body.fold.out.next.sub .overview, body.fold.out.next.sub .visual, body.fold.out.next.sub .point, body.fold.out.next.sub .detail, body.fold.out.next.sub .footlink, body.fold.out.next.sub .next {
+  644: body.fold.out.prev.sub section.content, body.fold.out.return.sub section.content {
+  647: body.fold.out.prev.sub .wrap, body.fold.out.prev.sub .head, body.fold.out.prev.sub .itemhead, body.fold.out.prev.sub .sub, body.fold.out.prev.sub .overview, body.fold.out.prev.sub .visual, body.fold.out.prev.sub .point, body.fold.out.prev.sub .detail, body.fold.out.prev.sub .footlink, body.fold.out.prev.sub .next, body.fold.out.return.sub .wrap, body.fold.out.return.sub .head, body.fold.out.return.sub .itemhead, body.fold.out.return.sub .sub, body.fold.out.return.sub .overview, body.fold.out.return.sub .visual, body.fold.out.return.sub .point, body.fold.out.return.sub .detail, body.fold.out.return.sub .footlink, body.fold.out.return.sub .next {
+  653: body.fold.out.prev.sub .overview .detail, body.fold.out.return.sub .overview .detail {
+  657:   body.fold.out.prev.sub .wrap, body.fold.out.prev.sub .head, body.fold.out.prev.sub .itemhead, body.fold.out.prev.sub .sub, body.fold.out.prev.sub .overview, body.fold.out.prev.sub .visual, body.fold.out.prev.sub .point, body.fold.out.prev.sub .detail, body.fold.out.prev.sub .footlink, body.fold.out.prev.sub .next, body.fold.out.return.sub .wrap, body.fold.out.return.sub .head, body.fold.out.return.sub .itemhead, body.fold.out.return.sub .sub, body.fold.out.return.sub .overview, body.fold.out.return.sub .visual, body.fold.out.return.sub .point, body.fold.out.return.sub .detail, body.fold.out.return.sub .footlink, body.fold.out.return.sub .next {
+  661:   body.fold.out.next .preview.pleft .multibrowser.cycle .browser {
+  665:     body.fold.out.next .preview.pleft .multibrowser.cycle .browser img {
+  669:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stacka {
+  671:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stacka img {
+  675:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackb {
+  677:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackc {
+  679:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackd {
+  682:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackd img {
+  684:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepb .stackd {
+  686:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepb .stackd img {
+  688:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stacka {
+  691:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stacka img {
+  693:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackb {
+  695:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackb img {
+  699:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackc {
+  701:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackd {
+  703:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepc .stacka {
+  705:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepc .stacka img {
+  707:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stacka {
+  709:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackb {
+  712:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackb img {
+  714:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackc {
+  716:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackc img {
+  720:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackd {
+  722:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepd .stackb {
+  724:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepd .stackb img {
+  726:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stacka {
+  728:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackb {
+  730:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackc {
+  733:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackc img {
+  735:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackd {
+  737:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackd img {
+  741:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepa .stackc {
+  743:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepa .stackc img {
+  746: body.fold header .wrap {
+  749: body.fold section.bridge .bridge {
+  754: body.home.fold .base {
+  759: body.foldb .base, body.sub.foldb .base, body.home.foldb .base {
+  764: body.foldb header, body.sub.foldb header, body.home.foldb header {
+  768:   body.foldb header .splash, body.foldb header .fade, body.sub.foldb header .splash, body.sub.foldb header .fade, body.home.foldb header .splash, body.home.foldb header .fade {
+  771: body.foldb section.bridge .bridge, body.sub.foldb section.bridge .bridge, body.home.foldb section.bridge .bridge {
+  774:   body.foldb section.bridge .bridge .fade, body.sub.foldb section.bridge .bridge .fade, body.home.foldb section.bridge .bridge .fade {
+ 2979:   body.fold .tagline > span {
+ 2982:     body.fold .tagline > span h1:nth-of-type(1) {
+ 2984:     body.fold .tagline > span h1:nth-of-type(2) {
+ 2986:     body.fold .tagline > span h1:nth-of-type(3) {
+ 2994:   body.fold header .wrap {
+ 3752: body.lifeis.fold .lifebg {
+ 3754:   body.lifeis.fold .lifebg img {
+ 4411: body.home.fold .base, .base {
+
+/Users/sam/Desktop/Addicaid-site/styles/resources/transitions.scss:
+  118: 	body.out:not(.fold), body.out.return:not(.fold) {
+  140: 	body.fold.out.next {
+  160: 		body.fold.out.next, body.fold.out.prev, body.fold.out.return {
+  169: 		body.fold.out.next {
+  184: 	body.fold.out.prev, body.fold.out.return {
+  200: 		body.fold.out.prev, body.fold.out.return {
+  211: 		body.fold.out.next {
+  320: 	body.fold {
+  333: 	body.home.fold {
+  339: 	body.foldb, body.sub.foldb, body.home.foldb {
+
+/Users/sam/Desktop/Addicaid-site/styles/sam.scss:
+  331: body.home.fold .base, .base {
+
+/Users/sam/Desktop/Addicaid-site/styles/sections/-projects.scss:
+  285: 	body.lifeis.fold {
+
+/Users/sam/Desktop/Addicaid-site/styles/sections/header.scss:
+   91: 		body.fold {
+  121: 		body.fold {
+
+/Users/sam/Desktop/Addicaid-site/styles/style.css:
+  639: body.out:not(.fold) .twrap, body.out.return:not(.fold) .twrap {
+  642: body.out:not(.fold) .underlay, body.out.return:not(.fold) .underlay {
+  648: body.out:not(.fold) .feature, body.out:not(.fold) .footer, body.out:not(.fold) .sub:not(':first-of-type'), body.out:not(.fold) .visual, body.out:not(.fold) .next, body.out.return:not(.fold) .feature, body.out.return:not(.fold) .footer, body.out.return:not(.fold) .sub:not(':first-of-type'), body.out.return:not(.fold) .visual, body.out.return:not(.fold) .next {
+  650: body.out:not(.fold).home header, body.out.return:not(.fold).home header {
+  655: body.fold.out.next.home header .wrap, body.fold.out.next.home .head, body.fold.out.next.home .sub {
+  661: body.fold.out.next.sub .wrap, body.fold.out.next.sub .head, body.fold.out.next.sub .itemhead, body.fold.out.next.sub .sub, body.fold.out.next.sub .overview, body.fold.out.next.sub .visual, body.fold.out.next.sub .point, body.fold.out.next.sub .detail, body.fold.out.next.sub .footlink, body.fold.out.next.sub .next {
+  667: body.fold.out.next.sub .overview .detail {
+  672:   body.fold.out.next.sub section.next, body.fold.out.prev.sub section.next, body.fold.out.return.sub section.next {
+  676:   body.fold.out.next.home header .wrap, body.fold.out.next.home .head, body.fold.out.next.home .sub {
+  679:   body.fold.out.next.sub .wrap, body.fold.out.next.sub .head, body.fold.out.next.sub .itemhead, body.fold.out.next.sub .sub, body.fold.out.next.sub .overview, body.fold.out.next.sub .visual, body.fold.out.next.sub .point, body.fold.out.next.sub .detail, body.fold.out.next.sub .footlink, body.fold.out.next.sub .next {
+  682: body.fold.out.prev.sub section.content, body.fold.out.return.sub section.content {
+  684: body.fold.out.prev.sub .wrap, body.fold.out.prev.sub .head, body.fold.out.prev.sub .itemhead, body.fold.out.prev.sub .sub, body.fold.out.prev.sub .overview, body.fold.out.prev.sub .visual, body.fold.out.prev.sub .point, body.fold.out.prev.sub .detail, body.fold.out.prev.sub .footlink, body.fold.out.prev.sub .next, body.fold.out.return.sub .wrap, body.fold.out.return.sub .head, body.fold.out.return.sub .itemhead, body.fold.out.return.sub .sub, body.fold.out.return.sub .overview, body.fold.out.return.sub .visual, body.fold.out.return.sub .point, body.fold.out.return.sub .detail, body.fold.out.return.sub .footlink, body.fold.out.return.sub .next {
+  690: body.fold.out.prev.sub .overview .detail, body.fold.out.return.sub .overview .detail {
+  695:   body.fold.out.prev.sub .wrap, body.fold.out.prev.sub .head, body.fold.out.prev.sub .itemhead, body.fold.out.prev.sub .sub, body.fold.out.prev.sub .overview, body.fold.out.prev.sub .visual, body.fold.out.prev.sub .point, body.fold.out.prev.sub .detail, body.fold.out.prev.sub .footlink, body.fold.out.prev.sub .next, body.fold.out.return.sub .wrap, body.fold.out.return.sub .head, body.fold.out.return.sub .itemhead, body.fold.out.return.sub .sub, body.fold.out.return.sub .overview, body.fold.out.return.sub .visual, body.fold.out.return.sub .point, body.fold.out.return.sub .detail, body.fold.out.return.sub .footlink, body.fold.out.return.sub .next {
+  699:   body.fold.out.next .preview.pleft .multibrowser.cycle .browser {
+  703:     body.fold.out.next .preview.pleft .multibrowser.cycle .browser img {
+  707:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stacka {
+  710:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stacka img {
+  714:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackb {
+  717:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackc {
+  720:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackd {
+  724:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepa .stackd img {
+  726:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepb .stackd {
+  729:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepb .stackd img {
+  731:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stacka {
+  735:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stacka img {
+  737:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackb {
+  740:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackb img {
+  744:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackc {
+  747:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepb .stackd {
+  750:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepc .stacka {
+  753:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepc .stacka img {
+  755:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stacka {
+  758:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackb {
+  762:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackb img {
+  764:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackc {
+  767:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackc img {
+  771:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepc .stackd {
+  774:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepd .stackb {
+  777:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepd .stackb img {
+  779:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stacka {
+  782:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackb {
+  785:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackc {
+  789:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackc img {
+  791:   body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackd {
+  794:     body.fold.out.next .preview.pleft .multibrowser.cycle.stepd .stackd img {
+  798:   body.fold.out.next .preview.pleft .multibrowser.cycle.prepa .stackc {
+  801:     body.fold.out.next .preview.pleft .multibrowser.cycle.prepa .stackc img {
+  803: body.fold header .wrap {
+  805: body.fold section.bridge .bridge {
+  810: body.home.fold .base {
+  815: body.foldb .base, body.sub.foldb .base, body.home.foldb .base {
+  819: body.foldb header, body.sub.foldb header, body.home.foldb header {
+  823:   body.foldb header .splash, body.foldb header .fade, body.sub.foldb header .splash, body.sub.foldb header .fade, body.home.foldb header .splash, body.home.foldb header .fade {
+  825: body.foldb section.bridge .bridge, body.sub.foldb section.bridge .bridge, body.home.foldb section.bridge .bridge {
+  828:   body.foldb section.bridge .bridge .fade, body.sub.foldb section.bridge .bridge .fade, body.home.foldb section.bridge .bridge .fade {
+ 3065:   body.fold .tagline > span {
+ 3068:     body.fold .tagline > span h1:nth-of-type(1) {
+ 3071:     body.fold .tagline > span h1:nth-of-type(2) {
+ 3074:     body.fold .tagline > span h1:nth-of-type(3) {
+ 3081:   body.fold header .wrap {
+ 3840: body.lifeis.fold .lifebg {
+ 3842:   body.lifeis.fold .lifebg img {
+ 4504: body.home.fold .base, .base {
+
+525 matches across 31 files

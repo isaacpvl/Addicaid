@@ -3,6 +3,7 @@
 // Page transition styles
 // ------------------------------------------------------------
 //
+$max-width: initial; 
 	$twrap-speed: 1s;
 	$slide-speed: 0.75s;
 	.twrap {
@@ -10,7 +11,7 @@
 		z-index: 2;
 		width: 100%;
 		min-width: 320px;
-		max-width: $max-width;
+	
 		height: 100%;
 		margin: auto;
 		box-shadow: 0 0 20px $black-0;
@@ -25,7 +26,7 @@
 		z-index: 0;
 		top: 0;
 		width: 100%;
-		max-width: $max-width;
+		
 		height: 100%;
 		background: $black-4;
 		@include animate($twrap-speed);
@@ -114,7 +115,7 @@
 	}
 
 // page out (from top)
-	body.out:not(.fold), body.out.return:not(.fold) {
+	body.out:not(), body.out.return:not() {
 		.twrap {
 			box-shadow: 0 0 20px $black-2;
 			@include zoomout;
@@ -136,7 +137,7 @@
 	}
 
 // next sub
-	body.fold.out.next {
+	body.out.next {
 		&.home {
 			header .wrap, .head, .sub {
 				@include tmove(-150px, 0);
@@ -156,7 +157,7 @@
 		}
 	}
 	@media screen and (min-width: $max-width+1) {
-		body.fold.out.next, body.fold.out.prev, body.fold.out.return {
+		body.out.next, body.out.prev, body.out.return {
 			&.sub {
 				section.next {
 					@include tmove(0, 0);
@@ -165,7 +166,7 @@
 		}
 	}
 	@media screen and (max-width: 640px) {
-		body.fold.out.next {
+		body.out.next {
 			&.home {
 				header .wrap, .head, .sub {
 					@include tmove(-96px, 0);
@@ -180,7 +181,7 @@
 	}
 
 // previous sub & return home
-	body.fold.out.prev, body.fold.out.return {
+	body.out.prev, body.out.return {
 		&.sub {
 			section.content {
 				overflow: hidden;
@@ -196,7 +197,7 @@
 		}
 	}
 	@media screen and (max-width: 640px) {
-		body.fold.out.prev, body.fold.out.return {
+		body.out.prev, body.out.return {
 			&.sub {
 				.wrap, .head, .itemhead, .sub, .overview, .visual, .point, .detail, .footlink, .next {
 					@include tmove(96px, 0);
@@ -207,7 +208,7 @@
 
 // multibrowser cycle out
 	@media screen and (min-width: $max-width+1) {
-		body.fold.out.next {
+		body.out.next {
 			.preview.pleft {
 				.multibrowser.cycle {
 					.browser {
@@ -316,26 +317,26 @@
 // Fold transitions
 // ------------------------------------------------------------
 //
-	body.fold {
-		// header {
-		// 	.wrap {
-		// 		opacity: 0.3;
-		// 	}
-		// }
-		// section.bridge {
-		// 	.bridge {
-		// 		opacity: 1;
-		// 		@include trans(0.8s);
-		// 	}
-		// }
+	body {
+		header {
+			.wrap {
+				opacity: 0.3;
+			}
+		}
+		section.bridge {
+			.bridge {
+				opacity: 1;
+				@include trans(0.8s);
+			}
+		}
 	}
-	body.home.fold {
+	body.home {
 		.base {
-			// background: $featurebg-d;
+			background: $featurebg-f;
 			@include trans(0.25s);
 		}
 	}
-	body.foldb, body.sub.foldb, body.home.foldb {
+	bodyb, body.subb, body.homeb {
 		.base {
 			background: $white;
 			@include trans(0s);

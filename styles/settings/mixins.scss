@@ -184,17 +184,17 @@
 		border-top: $size solid $color;
 		opacity: 0;
 	}
-	@mixin outline ($size: 1px, $color: $black-2) {
+	@mixin inline ($size: 1px, $color: $black-2) {
 		@include stroke($size, $color);
 	}
-	@mixin outlines ($size: 1px, $color: $black-2) {
+	@mixin inlines ($size: 1px, $color: $black-2) {
 		@include stroke($size, $color);
 		* { @include stroke($size, $color); }
 	}
-	@mixin outer-outline ($size: 1px, $color: $black-2) {
+	@mixin outline ($size: 1px, $color: $black-2) {
 		@include outerstroke($size, $color);
 	}
-	@mixin outer-outlines ($size: 1px, $color: $black-2) {
+	@mixin outlines ($size: 1px, $color: $black-2) {
 		@include outerstroke($size, $color);
 		* { @include outerstroke($size, $color); }
 	}
@@ -247,6 +247,12 @@
 		background: -ms-linear-gradient(left, rgba(237,205,201,1) 0%,rgba(237,205,201,1) 15%,rgba(251,213,207,1) 15%,rgba(251,213,207,1) 29%,rgba(253,231,214,1) 29%,rgba(253,231,214,1) 43%,rgba(255,243,221,1) 43%,rgba(255,243,221,1) 57%,rgba(222,240,235,1) 57%,rgba(222,240,235,1) 71%,rgba(219,232,235,1) 71%,rgba(219,232,235,1) 85%,rgba(205,229,240,1) 85%,rgba(205,229,240,1) 100%);
 		background: linear-gradient(to right, rgba(237,205,201,1) 0%,rgba(237,205,201,1) 15%,rgba(251,213,207,1) 15%,rgba(251,213,207,1) 29%,rgba(253,231,214,1) 29%,rgba(253,231,214,1) 43%,rgba(255,243,221,1) 43%,rgba(255,243,221,1) 57%,rgba(222,240,235,1) 57%,rgba(222,240,235,1) 71%,rgba(219,232,235,1) 71%,rgba(219,232,235,1) 85%,rgba(205,229,240,1) 85%,rgba(205,229,240,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edcdc9', endColorstr='#55a9d1',GradientType=1 );
+	}
+
+
+	@mixin bluelink {
+		background: url(/_img/brush.png);
+		background-size: 100% 30px;
 	}
 
 
@@ -305,3 +311,47 @@
 			background-size: cover;
 		}
 	}
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+					eot: "?",
+					svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+					otf: "opentype",
+					ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}

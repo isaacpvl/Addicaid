@@ -1,18 +1,20 @@
 doctype html
 html
-	head
-		title Addicaid
-		include ../components/head
+    head
+        title Addicaid
+        include ../components/head
 
-	body.home
-		.twrap
-			a#home
-			include ../components/nav
-			include ../pages/home
-			include ../components/footer
-		include ../components/base
+    body.home
+        .twrap
+            a#home
+            include ../components/nav
+            include ../pages/home
+            include ../components/footer
+        include ../components/base
 
-	include ../components/loader
+    include ../components/loader
 
-	script(src="/_scripts/plugins.js")
-	script(src="/_scripts/home.js")
+    script(src="/_scripts/plugins.js")
+    script(src="/_scripts/home.js")
+    script(src="https://js.stripe.com/v3/")
+    script(src="/_scripts/stripe.js")

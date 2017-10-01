@@ -12,7 +12,6 @@
 			}
 		}
 		section.content {
-			min-height: 1500px;
 			div {
 				@include trans(0.75s, 0.3s);
 			}
@@ -199,7 +198,6 @@
 //
 	body.sub {
 		header {
-			color: $white;
 			text-shadow: 1px 2px $black-15;
 			.logo {
 				position: relative;
@@ -235,7 +233,7 @@
 					right: 0;
 				}
 				h1 {
-					max-width: 720px;
+					max-width: 1220px;
 					margin: auto;
 					@include trailer(3);
 					@include animatereset(0.8s);

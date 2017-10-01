@@ -58,8 +58,10 @@
 		position: relative;
 		z-index: 2;
 		display: inline-block;
-		width: 100%;
-		height: 85%;
+		width: 90%;
+		max-width: 1000px;
+		height: 80%;
+		text-align: left;
 		@include animatereset(0.8s, 0.8s);
 		@include fadeinup;
 		> span {
@@ -70,16 +72,10 @@
 			max-width: 100%;
 		}
 		h1 {
-			display: inline-block;
 			@include leader(0.5);
-			margin-left: -2%;
-			@include padding-x(2%);
-			white-space: nowrap;
-			background: $primary;
-			color: $white;
 			@include torigin(25% 50%);
-			@include trans(0.3s);
 			@include fadeindown;
+			@include trans(0.3s);
 			&:nth-of-type(1) {
 				@include animatereset(0.8s*1.5, 1s*1.5);
 			}
@@ -91,63 +87,22 @@
 			}
 		}
 	}
-//
-	// @media screen and (min-width: 960px) {
-	// 	body.fold {
-	// 		.wrap {
-	// 			@include tscale(0.92);
-	// 		}
-	// 		.tagline {
-	// 			>span {
-	// 				@include trans(0.3s);
-	// 				h1:nth-of-type(1) {
-	// 					@include tmove(-24px, -42px*1.5);
-	// 				}
-	// 				h1:nth-of-type(2) {
-	// 					@include tmovescale(0.96, -42px, -33px*1.5);
-	// 				}
-	// 				h1:nth-of-type(3) {
-	// 					@include tmovescale(0.92, -56px, -24px*1.5);
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-
-// Cover styles
-// ------------------------------------------------------------
-//
-	section.bridge {
-		z-index: 0;
-		height: 100vh;
-		overflow: visible;
-		&::before {
-			content: '';
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			z-index: 2;
-			height: 120%;
-			@include gradient-vert-d($white-0, 0%, $white, 75%);
-		}
-		.cover {
-			position: absolute;
-			top: -80%;
-			left: 0;
-			right: 0;
-			z-index: 1;
-			img {
-				position: relative;
-				width: 100%;
-				// height: 120%;
+	@media screen and (min-width: 960px) {
+		body {
+			.tagline {
+				>span {
+					@include trans(0.3s);
+					h1:nth-of-type(1) {
+						@include tmove(-24px, -42px*1.5);
+					}
+					h1:nth-of-type(2) {
+						@include tmovescale(0.96, -42px, -33px*1.5);
+					}
+					h1:nth-of-type(3) {
+						@include tmovescale(0.92, -56px, -24px*1.5);
+					}
+				}
 			}
-		}
-		.point {
-			@include padding-leader(15);
-			@include padding-trailer(1);
-			// @include tmove(0, 180px);
 		}
 	}
 
@@ -159,6 +114,15 @@
 		header {
 			.wrap {
 				width: 100%;
+			}
+		}
+	}
+	@media screen and (min-width: 960px) {
+		body {
+			header {
+				.wrap {
+					@include tscale(0.92);
+				}
 			}
 		}
 	}

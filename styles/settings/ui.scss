@@ -6,14 +6,14 @@
 	a, a img {
 		text-decoration: underline;
 		cursor: pointer;
-		color: $primary;
+		color: $secondary;
 		@include trans(0.3s);
 		&:hover {
-			color: $primary-l;
+			color: $secondary-l;
 			@include trans(0.15s);
 		}
 		&:active {
-			color: $primary-d;
+			color: $secondary-d;
 			@include trans(0.075s);
 		}
 		&.disabled {
@@ -30,15 +30,22 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
-		color: $white;
+		color: $black;
 		border-radius: 2px;
-		background: $primary;
+		background: $white;
+		border: 1.5px solid $black;
+		opacity: 1;
+		
 		@include noselect;
 		&:hover {
 			color: $white;
+			background: #d7dc4c;
+			border: 1.5px solid #d7dc4c;
 		}
 		&:active, &.active {
-			color: $white;
+			color: $secondary;
+			background: #d7dc4c;
+			border: 1.5px solid #d7dc4c;
 		}
 	}
 	.button.disabled {
@@ -47,7 +54,8 @@
 		opacity: 0.3;
 		&:hover, &:active, &.active {
 			color: $white;
-			background: $primary;
+			background: $secondary;
+			// box-shadow: inset 0 0 0 1px $secondary, inset 0 0px $white, 0 0px $secondary;
 			@include tmove(0, 0);
 		}
 	}
@@ -73,11 +81,11 @@
 			@include lineh(4.5);
 			font-size: 14px;
 			&:hover {
-				box-shadow: inset 0 0 0 1px $primary, inset 0 54px $white, 0 3px $primary;
+				box-shadow: inset 0 0 0 1px $secondary, inset 0 54px $white, 0 3px $secondary;
 				@include tmove(0, -3px);
 			}
 			&:active, &.active {
-				box-shadow: inset 0 0 0 1px $primary, inset 0 54px $white-8, 0 -3px $primary;
+				box-shadow: inset 0 0 0 1px $secondary, inset 0 54px $white-8, 0 -3px $secondary;
 				@include tmove(0, 1px);
 			}
 		}

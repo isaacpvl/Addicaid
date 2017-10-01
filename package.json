@@ -21,6 +21,7 @@
     "gulp-autoprefixer": "^2.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-express": "~0.1.13",
+    "gulp-image-optimization": "^0.1.3",
     "gulp-jshint": "^1.12.0",
     "gulp-plumber": "~0.6.6",
     "gulp-rename": "^1.2.2",
@@ -28,7 +29,7 @@
     "gulp-uglify": "^1.5.3",
     "jshint-stylish": "^1.0.0"
   },
-  "description": "Addicaid",
+  "description": "Addicaid 2K17",
   "main": "app.js",
   "repository": {
     "type": "git",

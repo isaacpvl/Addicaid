@@ -1,25 +1,25 @@
-
-
 // Footer styles
 // ------------------------------------------------------------
 //
-	section.footer {
-		.sitemap{
-			position: relative;
-			width: 100%;
-			min-height: 60px;
-		}
-		.subscribe {
-			position: relative;
-			width: 100%;
-			min-height: 60px;
-		}
-	}
-
+section.footer {
+  .sitemap {
+    position: relative;
+    width: 100%;
+    min-height: 60px;
+  }
+  .subscribe {
+    position: relative;
+    width: 100%;
+    min-height: 60px;
+  }
+  .text {
+    margin: 20px;
+  }
+}
 
 // Media queries
 // ------------------------------------------------------------
 //
-	@media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
 
-	}
+}

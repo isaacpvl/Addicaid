@@ -1,4 +1,5 @@
 
+//@import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 // Settings
 	@import "settings/reset";
@@ -7,6 +8,7 @@
 	@import "settings/type";
 	@import "settings/ui";
 	@import "settings/animations";
+	@import "settings/fonts";
 
 // Resources
 	@import "resources/transitions";
@@ -28,13 +30,45 @@
 	@import "sections/subpage";
 
 
+
 // Base styles
 // ------------------------------------------------------------
 //
+.jdog {
+	overflow: hidden; 
+	width: 100%;
+	height: auto; 
+	max-width: 100%;
+}
+
+.big {
+	font-size: 1em;
+    line-height: 1em;
+    text-align: left;
+    position: absolute;
+    width: 350px;
+    opacity: .2;
+    text-transform: lowercase !important;
+    font-style: italic;
+    left: 20%;
+    font-family: "Rubik", sans-serif;
+}
+footer {
+	
+	p {
+	font-size: 14px; 
+	font-style: italic; 
+	color: rgba(100,100,100,0.8);
+	text-align: center;
+
+	height: auto; 
+	display: block;
+}
+}
 	html {
 		height: 100%;
 		font-size: 100%;
-		background: $bodybg;
+		background: $light;
 		-webkit-font-smoothing: antialiased;
 		-moz-font-smoothing: antialised;
 		-ms-font-smoothing: antialised;
@@ -45,7 +79,7 @@
 		position: relative;
 		width: 100%;
 		min-width: 320px;
-		max-width: $max-width;
+		//max-width: $max-width;
 		height: 100%;
 		margin: auto;
 		font-family: $serif;
@@ -55,17 +89,43 @@
 	section {
 		position: relative;
 		z-index: 2;
+		z-index: 2;
 		width: 100%;
 		min-width: 320px;
-		max-width: $max-width;
+		//max-width: $max-width;
 		margin: auto;
 		@include padding-leader(12);
 		@include padding-trailer(15);
+		@include padding-x(3%);
 		text-align: center;
 		overflow: hidden;
 		color: $black;
 		background: $bodybg;
+		padding-left: 25px !important;
+		padding-right: 25px !important;
 	}
+	header, section.feature {
+		color: $bodybg;
+		background: $featurebg;
+		p {
+			text-shadow: none;
+			padding-right: 0;
+		}
+		&.alt {
+			color: $featurebg;
+			background: $bodybg;
+		}
+	}
+section.feature {
+	padding-top: 0px; 
+		div.head.alt {
+			margin-top: 10px !important;
+		}
+}
+
+
+
+	
 	.base {
 		position: fixed;
 		top: 0;
@@ -73,33 +133,49 @@
 		z-index: -1;
 		width: 100%;
 		min-width: 320px;
-		max-width: $max-width;
+		//max-width: $max-width;
 		margin: auto;
 		box-shadow: 0px 0px 96px $black-1, -0px 0px 96px $black-1;
-		// background: $featurebg;
+		box-shadow: 0px 0px 96px $black-1, -0px 0px 96px $black-1;
+		background: $featurebg;
 		@include trans(0.5s);
-		// &::after {
-		// 	// content: '';
-		// 	display: block;
-		// 	position: fixed;
-		// 	z-index: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background: $featurebg url(/_img/pattern.svg) no-repeat center top;
-		// 	background-size: auto 100vh;
-		// 	opacity: 0.12;
-		// }
 	}
-	nav ul, header, section, section.sub, section .cover {
+	nav ul, header, section, section .sub {
 		@include padding-x(5%);
 	}
+	body.home, body.sub {
+		section.content {
+			// @include padding-x(0%);
+			// overflow: visible;
+		}
+		section.feature {
+			min-height: 120%;
+		}
+	}
 
+.cred {
+	    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jdog {
+	z-index: 1; 
+}
+// 
+// .jdog::after {
+// 	background: url(../_img/jdog.jpg);
+// 	background-size: cover;
+// 	content: "";
+// 	height: 400px;
+// 	width: 100%;
+// 	display: block;
+// }
 
 // Media queries
 // ------------------------------------------------------------
 //
 	@media screen and (min-width: $max-width+1) {
-		nav ul, header, section, section.sub, section .cover {
+		nav ul, header, section, section.sub {
 			@include padding-x(6.5%);
 		}
 	}
@@ -110,7 +186,33 @@
 		.base {
 			z-index: -9;
 		}
+
+section.feature .cred li {
+    clear: both;
+    left: -5%;
+    position: relative;
+    min-width: 540px;
+    width: 100%;
+        position: relative;
+    left: -70px;
+  }
 	}
+
+.mshow {
+	display: none; 
+}
+
+.dhide {
+	display: block;
+}
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.head h5::after {
+	top: 40px;
+}
 
 
 // Temporary styles for front-end dev
@@ -138,8 +240,11 @@
 		@include gradient-text(left bottom, right top, 0%, $orange-f, 100%, $purple-f);
 	}
 	body.outlines {
-		li, a, span { @include outline; }
-		h1, h2, h3, h4, h5, h6 { @include outline; }
-		div, .wrap, section { @include outline; }
-		// * { @include outline; }
+		li, a, span { @include inline; }
+		h1, h2, h3, h4, h5, h6 { @include inline; }
+		div, .wrap, section { @include inline; }
+		// * { @include inline; }
 	}
+
+	@import "sam";
+

@@ -17,10 +17,9 @@
 		var feature = $('#feature');
 		var footer = $('#footer');
 		var tagline = $('#tagline');
-		var cover = $('#cover');
 		var navToggle = true;
-		var loadDelay = 1200;
-		var introStart = 1000;
+		var loadDelay = 0;
+		var introStart = 0;
 
 
 // Intro sequence
@@ -61,9 +60,9 @@
 					body.toggleClass('foldb');}, offset: '150%'
 				});
 				// nav style
-				bridge.waypoint({
+				content.waypoint({
 					handler: function(event, direction) {
-					nav.toggleClass('sticky');}, offset: '90%'
+					nav.toggleClass('sticky');}, offset: '30%'
 				});
 				feature.waypoint({
 					handler: function(event, direction) {
@@ -107,12 +106,6 @@
 				yPosTagline = -($(window).scrollTop()/headerTagline.data('speed'));
 			headerTagline.css({'-webkit-transform':'translateY('+yPosTagline+'px)','transform':'translateY('+yPosTagline+'px)'});
 		});
-		$(document).scroll(function(){
-			var headerCover = cover,
-				offsetCover = headerCover.offset().top,
-				yPosCover = -($(window).scrollTop()/headerCover.data('speed'));
-			headerCover.css({'-webkit-transform':'translateY('+yPosCover+'px)','transform':'translateY('+yPosCover+'px)'});
-		});
 	// }
 
 // browser cycle animation trigger
@@ -152,18 +145,6 @@
 	$(body).on('mouseup', '#menu', function(event) {
 		event.preventDefault();
 		$('body').toggleClass('outlines');
-	});
-
-// multiphone transform toggle
-	$(body).on('mouseup', '#multiphone', function(event) {
-		event.preventDefault();
-		$('.multiphone').toggleClass('perspective');
-	});
-
-// multiplatform transform toggle
-	$(body).on('mouseup', '#multiplatform', function(event) {
-		event.preventDefault();
-		$('.multiplatform').toggleClass('perspective');
 	});
 
 });
